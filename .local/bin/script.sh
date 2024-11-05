@@ -13,15 +13,15 @@ choice=$(echo -e "$options" | rofi -dmenu -replace -config ~/.config/rofi/script
 
 case $choice in
 	$option1)
-		alacritty -e $SHELL -c "rtheme.sh && sleep 1" ;;
+		kitty -e $SHELL -c "rtheme.sh && sleep 1" ;;
 	$option2)
-		alacritty -e $SHELL -c "convert-to-gif.sh && sleep 1" ;;
+		kitty -e $SHELL -c "convert-to-gif.sh && sleep 1" ;;
 	$option3)
-		alacritty -e $SHELL -c "convert-to-jpg.sh && sleep 1" ;;
+		kitty -e $SHELL -c "convert-to-jpg.sh && sleep 1" ;;
 	$option4)
-		alacritty -e $SHELL -c "merge_img.sh && sleep 1" ;;
+		kitty -e $SHELL -c "merge_img.sh && sleep 1" ;;
 	$option5)
-		alacritty -e $SHELL -c "extract.sh && sleep 1" ;;
+		kitty -e $SHELL -c "extract.sh && sleep 1" ;;
 	$option6)
-		alacritty --hold -e fontsearch.sh ;;
+		kitty --hold -e fontsearch.sh ;;
 esac

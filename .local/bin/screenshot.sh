@@ -1,9 +1,9 @@
 #!/bin/sh
 
-option1="  Entire Desktop"
-option2="  Capture Launcher"
-option3="  Flameshot GUI"
-option4="  Configure"
+option1="  Entire Desktop"
+option2="  Flameshot GUI"
+option3="  Configure"
+option4="  Wallpaper"
 
 options="$option1\n$option2\n$option3\n$option4"
 
@@ -13,9 +13,9 @@ case $choice in
 	$option1)
 		sleep 1 && flameshot full ;;
 	$option2)
-		flameshot launcher ;;
-	$option3)
 		flameshot gui ;;
-	$option4)
+	$option3)
 		flameshot config ;;
+	$option4)
+		waypaper ;;
 esac

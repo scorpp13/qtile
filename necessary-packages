@@ -34,6 +34,7 @@
 	peek
 	picom
 	pipewire
+	pipx
 	polkit-kde-agent
 	psutil
 	pywlroots
@@ -55,6 +56,7 @@
 	vifm
 	vim
 	vivaldi
+	waypaper
 	wireplumber
 	wlroots
 	xarchiver
