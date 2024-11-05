@@ -1,0 +1,12 @@
+{
+    "*.json": {
+        "commenttype": "/* %s */"
+    },
+    "*.jsonc": {
+        "commenttype": "//%s"
+    },
+    "clipboard": "terminal",
+    "colorscheme": "geany",
+    "initlua": true,
+    "mkparents": true
+}

@@ -1,0 +1,79 @@
+{
+	"MyPallete": {
+		"Color0": "#000000.4",
+		"Color1": "#282828",
+		"Color2": "#489273",
+		"Color3": "#EAB724",
+		"Color4": "#AAA4A0",
+		"Color5": "#c1e5e4",
+		"Color6": "#e9ff70",
+		"Color7": "#d20f39",
+		"Color8": "#665C54"
+		},
+	"Dracula": {
+		"Color0": "#000000.4",
+		"Color1": "#282a36",
+		"Color2": "#50fa7b",
+		"Color3": "#f1fa8c",
+		"Color4": "#f8f8f2",
+		"Color5": "#9aedfe",
+		"Color6": "#ff79c6",
+		"Color7": "#ff5555",
+		"Color8": "#bd93f9"
+		},
+	"Gruvbox": {
+		"Color0": "#000000.4",
+		"Color1": "#282828",
+		"Color2": "#427b58",
+		"Color3": "#eebd35",
+		"Color4": "#a89984",
+		"Color5": "#83a598",
+		"Color6": "#d3869b",
+		"Color7": "#b8bb26",
+		"Color8": "#3c3836"
+		},
+	"Monokai": {
+		"Color0": "#2D2A2E",
+		"Color1": "#403E41",
+		"Color2": "#A9DC76",
+		"Color3": "#FFD866",
+		"Color4": "#FCFCFA",
+		"Color5": "#78DCE8",
+		"Color6": "#AB9DF2",
+		"Color7": "#FF6188",
+		"Color8": "#FC9867"
+		},
+	"Nord": {
+		"Color0": "#2E3440",
+		"Color1": "#3B4252",
+		"Color2": "#A3BE8C",
+		"Color3": "#EBCB8B",
+		"Color4": "#D8DEE9",
+		"Color5": "#88C0D0",
+		"Color6": "#81A1C1",
+		"Color7": "#BF616A",
+		"Color8": "#B48EAD"
+		},
+	"Palenight": {
+		"Color0": "#292d3e",
+		"Color1": "#434758",
+		"Color2": "#c3e88d",
+		"Color3": "#ffcb6b",
+		"Color4": "#d0d0d0",
+		"Color5": "#89ddff",
+		"Color6": "#82aaff",
+		"Color7": "#f07178",
+		"Color8": "#c792ea"
+		},
+	"Solarized": {
+		"Color0": "#002b36",
+		"Color1": "#839496",
+		"Color2": "#073642",
+		"Color3": "#dc322f",
+		"Color4": "#859900",
+		"Color5": "#b58900",
+		"Color6": "#268bd2",
+		"Color7": "#d33682",
+		"Color8": "#2aa198"
+		}
+}

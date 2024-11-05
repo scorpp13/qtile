@@ -1,0 +1,10 @@
+* {
+	bground: rgba(0,0,0,0.4);
+	fground: #FFFFFF;
+	selected: #d20f39;
+	button: #4c4f69;
+	bcolor: rgba(0,0,0,0.0);
+	bwidth: 0px;
+	bradius: 10px;
+	font: "FiraCode Nerd Font SemBd 11";
+}
