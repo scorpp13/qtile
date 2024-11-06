@@ -1,9 +1,9 @@
 * {
-	bground: rgba(0,0,0,0.4);
+	bground: rgba(60,56,54,0.8);
 	fground: #FFFFFF;
-	selected: #d20f39;
+	selected: #cc241d;
 	button: #4c4f69;
-	bcolor: rgba(0,0,0,0.0);
+	bcolor: rgba(40,40,40,0.0);
 	bwidth: 0px;
 	bradius: 10px;
 	font: "FiraCode Nerd Font SemBd 11";
