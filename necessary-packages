@@ -34,7 +34,7 @@
 	picom
 	pipewire
 	pipx
-	polkit-kde-agent
+	polkit
 	psutil
 	pyxdg
 	rofi
@@ -49,6 +49,7 @@
 	qt6ct
 	ueberzugpp
 	unrar
+	user-dirs-dirs
 	usolitaire
 	vifm
 	vim
