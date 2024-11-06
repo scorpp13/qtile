@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 option1="  Entire Desktop"
 option2="  Flameshot GUI"

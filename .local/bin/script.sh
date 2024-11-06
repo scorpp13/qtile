@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 option1="  Rofi themes"
 option2="  Convert to gif"

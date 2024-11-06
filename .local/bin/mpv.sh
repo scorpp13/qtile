@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 option1="   IPTV sport"
 option2="󰄘  IPTV full"
