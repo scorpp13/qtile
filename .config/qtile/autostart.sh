@@ -4,4 +4,4 @@ gentoo-pipewire-launcher &
 picom --daemon &
 waypaper --restore &
 nm-applet &
-blueman-manager &
+blueman-applet &
