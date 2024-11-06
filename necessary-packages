@@ -3,14 +3,14 @@
 	7zip
 	alacritty
 	bashmount
+	bluez
+	blueman
 	breeze
 	btop
 	calcurse
 	cantarell
-	cffi
 	curl
 	dunst
-	eix
 	fastfetch
 	feh
 	fish
@@ -25,7 +25,6 @@
 	kitty
 	libreoffice
 	lxappearance
-	mesa-progs
 	micro
 	mousepad
 	mpv
@@ -37,7 +36,6 @@
 	pipx
 	polkit-kde-agent
 	psutil
-	pywlroots
 	pyxdg
 	rofi
 	telegram-desktop
@@ -51,18 +49,13 @@
 	qt6ct
 	ueberzugpp
 	unrar
-	unzip
 	usolitaire
 	vifm
 	vim
 	vivaldi
 	waypaper
-	wireplumber
-	wlroots
 	xarchiver
 	xautolock
-	xcffib
 	xdg-desktop-portal
 	xdg-utils
-	xkbcommon
 	xorg-meta
