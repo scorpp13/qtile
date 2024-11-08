@@ -25,6 +25,9 @@ set syscalls
 " Trash Directory
 set trash
 
+" Enable mouse
+set mouse=a
+
 " What should be saved automatically on restarting vifm.  Drop "savedirs"
 " value if you don't want vifm to remember last visited directories for you.
 set vifminfo=dhistory,chistory,savedirs,state,tui,shistory,
@@ -52,7 +55,7 @@ set norunexec
 
 " Format for displaying time in file list. For example:
 " TIME_STAMP_FORMAT=%m/%d-%H:%M
-set timefmt='%d/%m/%Y %H:%M'
+set timefmt='%d-%b-%Y_%H:%M'
 
 " Show list of matches on tab completion in command-line mode
 set wildmenu
@@ -84,7 +87,7 @@ if !has('win')
 endif
 
 " Set custom status line look
-set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d  "
+set statusline="%t%[ -> %T%] %6E %12A %=%d %5u:%g"
 
  colorscheme dracula
 " colorscheme dwmlight
@@ -94,23 +97,22 @@ set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d  "
 " colorscheme papercolor-light
 " colorscheme reicheltd-light
 
-set mouse=a
-
 " ------------------------------------------------------------------------------
 " Bookmarks
 " ------------------------------------------------------------------------------
 
-mark b ~/.local/bin/
-mark h ~/
 mark c ~/.config/
-mark C ~/.vifm/
-mark g ~/Documents/GitLab/
-mark p ~/Pictures/
-mark v ~/Videos/
 mark d ~/Downloads/
-mark R /
-mark M /run/media/as/
-mark P /etc/portage/
+mark h ~/
+mark g ~/Documents/GitLab/
+mark l ~/.local
+mark m /run/media/as/
+mark p /etc/portage/
+mark r /
+mark s ~/Pictures/screenshots
+mark u /usr
+mark v ~/Videos/
+mark w ~/Pictures/wallpapers
 
 " ------------------------------------------------------------------------------
 " Commands
@@ -145,6 +147,9 @@ command! mount bashmount
 
 " :filetype pattern1,pattern2 defaultprogram,program2
 " :fileviewer pattern1,pattern2 consoleviewer
+
+fileviewer .git/
+	\ git status %d %pu
 
 fileviewer <image/gif>
 	\ #ueberzug#image_no_cache %px %py %pw %ph
@@ -321,10 +326,9 @@ fileviewer {*.docx},
 	\vnd.openxmlformats-officedocument.wordprocessingml.document>
 	\ docx2txt.pl %f -
 
-" Directories
-filextype */
-	\ {View in thunar}
-	\ Thunar %f &
+" Enable ls colors in folder preview
+fileviewer */ ls --color=always                                                                  
+fileviewer .*/ ls --color=always
 
 " Syntax highlighting in preview
 "
