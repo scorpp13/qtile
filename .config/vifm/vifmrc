@@ -101,6 +101,7 @@ set statusline="%t%[ -> %T%] %6E %12A %=%d %5u:%g"
 " Bookmarks
 " ------------------------------------------------------------------------------
 
+mark b ~/.backup
 mark c ~/.config/
 mark d ~/Downloads/
 mark h ~/
