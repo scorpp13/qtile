@@ -1,4 +1,4 @@
-# My config files for Qtile WM
+# My config files for Gentoo Linux Qtile WM
 
 A working configuration of Qtile(X11) for Gentoo-based Linux
 
