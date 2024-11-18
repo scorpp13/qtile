@@ -3672,6 +3672,10 @@ filechooser stack.view frame > border {
   border-bottom-left-radius: 12px;
 }
 
+filechooser paned > separator {
+  background: none;
+}
+
 /***********
  * Sidebar *
  ***********/
@@ -4209,121 +4213,31 @@ messagedialog.background.csd decoration {
 }
 
 button.titlebutton:not(.suggested-action):not(.destructive-action) {
-  min-height: 16px;
-  min-width: 16px;
+  min-height: 22px;
+  min-width: 22px;
   padding: 0;
   margin: 0 2px;
   border-radius: 9999px;
 }
 
 button.minimize.titlebutton:not(.suggested-action):not(.destructive-action), button.maximize.titlebutton:not(.suggested-action):not(.destructive-action), button.close.titlebutton:not(.suggested-action):not(.destructive-action) {
-  color: transparent;
+  color: rgba(39, 46, 51, 0.6);
+  background-color: alpha(currentColor, 0.1);
 }
 
 button.minimize.titlebutton:hover:not(.suggested-action):not(.destructive-action), button.maximize.titlebutton:hover:not(.suggested-action):not(.destructive-action), button.close.titlebutton:hover:not(.suggested-action):not(.destructive-action) {
-  box-shadow: none;
+  color: rgba(39, 46, 51, 0.87);
+  background-color: alpha(currentColor, 0.15);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), inset 0 1px rgba(255, 251, 239, 0.15);
 }
 
 button.minimize.titlebutton:active:not(.suggested-action):not(.destructive-action), button.maximize.titlebutton:active:not(.suggested-action):not(.destructive-action), button.close.titlebutton:active:not(.suggested-action):not(.destructive-action) {
-  box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0);
-  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.12) 10%, transparent 0%);
-}
-
-button.minimize.titlebutton:hover:not(.suggested-action):not(.destructive-action), button.minimize.titlebutton:active:not(.suggested-action):not(.destructive-action), button.maximize.titlebutton:hover:not(.suggested-action):not(.destructive-action), button.maximize.titlebutton:active:not(.suggested-action):not(.destructive-action), button.close.titlebutton:hover:not(.suggested-action):not(.destructive-action), button.close.titlebutton:active:not(.suggested-action):not(.destructive-action) {
-  color: transparent;
+  color: rgba(39, 46, 51, 0.87);
+  background-color: alpha(currentColor, 0.2);
 }
 
 button.minimize.titlebutton:backdrop:not(.suggested-action):not(.destructive-action), button.maximize.titlebutton:backdrop:not(.suggested-action):not(.destructive-action), button.close.titlebutton:backdrop:not(.suggested-action):not(.destructive-action) {
-  background-color: #9da9a0;
-}
-
-button.minimize.titlebutton:backdrop:hover:not(.suggested-action):not(.destructive-action), button.minimize.titlebutton:backdrop:active:not(.suggested-action):not(.destructive-action), button.maximize.titlebutton:backdrop:hover:not(.suggested-action):not(.destructive-action), button.maximize.titlebutton:backdrop:active:not(.suggested-action):not(.destructive-action), button.close.titlebutton:backdrop:hover:not(.suggested-action):not(.destructive-action), button.close.titlebutton:backdrop:active:not(.suggested-action):not(.destructive-action) {
-  color: transparent;
-}
-
-button.minimize.titlebutton:not(.suggested-action):not(.destructive-action) {
-  background-color: #f57d26;
-}
-
-button.minimize.titlebutton:hover:not(.suggested-action):not(.destructive-action) {
-  background-color: shade(#f57d26, 0.4);
-}
-
-button.minimize.titlebutton:active:not(.suggested-action):not(.destructive-action) {
-  background-color: shade(#f57d26, 0.6);
-}
-
-button.maximize.titlebutton:not(.suggested-action):not(.destructive-action) {
-  background-color: #8da101;
-}
-
-button.maximize.titlebutton:hover:not(.suggested-action):not(.destructive-action) {
-  background-color: shade(#8da101, 0.4);
-}
-
-button.maximize.titlebutton:active:not(.suggested-action):not(.destructive-action) {
-  background-color: shade(#8da101, 0.6);
-}
-
-button.close.titlebutton:not(.suggested-action):not(.destructive-action) {
-  background-color: #f85552;
-}
-
-button.close.titlebutton:hover:not(.suggested-action):not(.destructive-action) {
-  background-color: shade(#f85552, 0.4);
-}
-
-button.close.titlebutton:active:not(.suggested-action):not(.destructive-action) {
-  background-color: shade(#f85552, 0.6);
-}
-
-.background.csd headerbar.titlebar.default-decoration button.minimize.titlebutton:not(.suggested-action):not(.destructive-action), .background.csd headerbar.titlebar.default-decoration button.maximize.titlebutton:not(.suggested-action):not(.destructive-action), .background.csd headerbar.titlebar.default-decoration button.close.titlebutton:not(.suggested-action):not(.destructive-action) {
-  background-repeat: no-repeat;
-  background-size: 16px 16px;
-  background-position: center;
-}
-
-.background.csd headerbar.titlebar.default-decoration button.minimize.titlebutton:not(.suggested-action):not(.destructive-action), .background.csd headerbar.titlebar.default-decoration button.maximize.titlebutton:not(.suggested-action):not(.destructive-action), .background.csd headerbar.titlebar.default-decoration button.close.titlebutton:not(.suggested-action):not(.destructive-action) {
-  box-shadow: none;
-  color: transparent;
-  animation: none;
-  transition: all 75ms cubic-bezier(0, 0, 0.2, 1);
-}
-
-.background.csd headerbar.titlebar.default-decoration button.minimize.titlebutton:hover:not(.suggested-action):not(.destructive-action) {
-  background-color: shade(#f57d26, 0.4);
-}
-
-.background.csd headerbar.titlebar.default-decoration button.minimize.titlebutton:active:not(.suggested-action):not(.destructive-action) {
-  background-color: shade(#f57d26, 0.6);
-}
-
-.background.csd headerbar.titlebar.default-decoration button.maximize.titlebutton:hover:not(.suggested-action):not(.destructive-action) {
-  background-color: shade(#8da101, 0.4);
-}
-
-.background.csd headerbar.titlebar.default-decoration button.maximize.titlebutton:active:not(.suggested-action):not(.destructive-action) {
-  background-color: shade(#8da101, 0.6);
-}
-
-.background.csd headerbar.titlebar.default-decoration button.close.titlebutton:hover:not(.suggested-action):not(.destructive-action) {
-  background-color: shade(#f85552, 0.4);
-}
-
-.background.csd headerbar.titlebar.default-decoration button.close.titlebutton:active:not(.suggested-action):not(.destructive-action) {
-  background-color: shade(#f85552, 0.6);
-}
-
-.background.csd.maximized
-headerbar.titlebar.default-decoration
-button.titlebutton:not(.suggested-action):not(.destructive-action).maximize:hover, .background.csd.maximized
-headerbar.titlebar.default-decoration
-button.titlebutton:not(.suggested-action):not(.destructive-action).maximize:active, .background.csd.fullscreen
-headerbar.titlebar.default-decoration
-button.titlebutton:not(.suggested-action):not(.destructive-action).maximize:hover, .background.csd.fullscreen
-headerbar.titlebar.default-decoration
-button.titlebutton:not(.suggested-action):not(.destructive-action).maximize:active, .background.csd.tiled headerbar.titlebar.default-decoration button.titlebutton:not(.suggested-action):not(.destructive-action).maximize:hover, .background.csd.tiled headerbar.titlebar.default-decoration button.titlebutton:not(.suggested-action):not(.destructive-action).maximize:active {
-  background-color: shade(#8da101, 0.4);
+  opacity: 0.65;
 }
 
 .monospace {
@@ -8518,8 +8432,8 @@ read if you used those and something break with a version upgrade you're on your
 @define-color wm_focused_bg #fffbef;
 @define-color wm_unfocused_bg #fffbef;
 @define-color wm_button_icon #fffbef;
-@define-color wm_button_focused_bg #fffbef;
-@define-color wm_button_unfocused_bg #fffbef;
+@define-color wm_button_focused_bg #fffdf9;
+@define-color wm_button_unfocused_bg #fffdf9;
 @define-color wm_button_hover_fg #fffbef;
 @define-color wm_button_active_fg #fffbef;
 @define-color wm_button_hover_bg #020203;
@@ -8529,7 +8443,7 @@ read if you used those and something break with a version upgrade you're on your
 @define-color placeholder_text_color #747774;
 /* Very contrasty background for text views (@theme_text_color foreground) */
 @define-color text_view_bg #e8e5d5;
-@define-color budgie_tasklist_indicator_color rgba(39, 46, 51, 0.26);
+@define-color budgie_tasklist_indicator_color rgba(156, 156, 145, 0.6675);
 @define-color budgie_tasklist_indicator_color_active #3a94c5;
 @define-color budgie_tasklist_indicator_color_active_window rgba(102, 167, 198, 0.816);
 @define-color budgie_tasklist_indicator_color_attention #dbbc7f;
