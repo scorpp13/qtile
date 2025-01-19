@@ -1,12 +1,11 @@
-# necessary packages
-# install with your package manager
-	7zip
+# necessary packages!
+# install with portage
+# emerge -av <app_name>
 	alacritty
 	bashmount
 	bluez
 	blueman
 	breeze
-	btop
 	calcurse
 	cantarell
 	curl
@@ -15,7 +14,7 @@
 	feh
 	fish
 	flameshot
-	font-manager
+	geany
 	gentoolkit
 	git
 	gum
@@ -23,14 +22,11 @@
 	i3lock-color
 	inxi
 	kitty
-	libreoffice
 	lxappearance
 	micro
-	mousepad
 	mpv
 	networkmanager
 	nm-applet
-	peek
 	picom
 	pipewire
 	pipx
@@ -38,22 +34,18 @@
 	psutil
 	pyxdg
 	rofi
-	telegram-desktop
 	thunar
 	thunar-archive-plugin
 	thunar-volman
 	tumbler
-	qbittorrent
 	qtile
 	qtile-extras
 	qt6ct
 	ueberzugpp
 	unrar
 	user-dirs-dirs
-	usolitaire
 	vifm
 	vim
-	vivaldi
 	waypaper
 	xarchiver
 	xautolock

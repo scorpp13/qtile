@@ -13,7 +13,7 @@ case $choice in
 	$option1)
 		sleep 1 && flameshot full ;;
 	$option2)
-		flameshot gui ;;
+		flameshot launcher ;;
 	$option3)
 		flameshot config ;;
 	$option4)

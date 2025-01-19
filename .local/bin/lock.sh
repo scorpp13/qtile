@@ -52,7 +52,7 @@ i3lock \
   --pass-volume-keys \
   --keylayout 1 \
   --time-font="DejaVu Sans Mono" \
-#  --date-font="FiraCode Nerd Font Ret" \
-#  --layout-font="FiraCode Nerd Font Ret" \
   --verif-font="FiraCode Nerd Font Mono" \
   --wrong-font="FiraCode Nerd Font Mono" \
+#  --date-font="FiraCode Nerd Font Ret" \
+#  --layout-font="FiraCode Nerd Font Ret" \
