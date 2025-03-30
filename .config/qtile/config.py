@@ -240,7 +240,7 @@ def init_widgets_list():
         widget.TextBox(
             background=Color0,
             fontsize=15,
-            text="",
+            text="",#  
             foreground=Color4,
             fontshadow=Color1,
             desc="",
