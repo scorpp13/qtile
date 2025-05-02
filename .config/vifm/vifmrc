@@ -89,11 +89,11 @@ endif
 " Set custom status line look
 set statusline="%t%[ -> %T%] %6E %12A %=%d %5u:%g"
 
- colorscheme dracula
+" colorscheme dracula
 " colorscheme dwmlight
 " colorscheme gruvbox
 " colorscheme paper
-" colorscheme papercolor-dark
+ colorscheme papercolor-dark
 " colorscheme papercolor-light
 " colorscheme reicheltd-light
 

@@ -7,7 +7,7 @@ TERM = "xterm-256color"
 
 [window]
 decorations = "Full" # None | Transparent | Buttonless
-decorations_theme_variant = "Dark" # Light | None
+decorations_theme_variant = "None" # Light | Dark
 padding = { x = 10, y = 10 }
 dynamic_padding = false
 opacity = 1.0
@@ -34,16 +34,24 @@ import = [
 #	"~/.config/alacritty/theme/ayu_dark.toml",
 #	"~/.config/alacritty/theme/ayu_light.toml",
 #	"~/.config/alacritty/theme/dracula_plus.toml",
+#	"~/.config/alacritty/theme/everforest_dark.toml",
+	"~/.config/alacritty/theme/gruber_darker.toml",
+#	"~/.config/alacritty/theme/dracula_plus.toml",
 #	"~/.config/alacritty/theme/gruvbox_light.toml",
 #	"~/.config/alacritty/theme/gruvbox_material.toml",
 #	"~/.config/alacritty/theme/hardhacker.toml",
 #	"~/.config/alacritty/theme/material_theme.toml",
-	"~/.config/alacritty/theme/noctis_lux.toml",
+#	"~/.config/alacritty/theme/monokai.toml",
+#	"~/.config/alacritty/theme/noctis_lux.toml",
+#	"~/.config/alacritty/theme/nordic.toml",
 #	"~/.config/alacritty/theme/papercolor_light.toml",
 #	"~/.config/alacritty/theme/papertheme.toml",
 #	"~/.config/alacritty/theme/pastel_dark.toml",
+#	"~/.config/alacritty/theme/solarized_osaka.toml",
 #	"~/.config/alacritty/theme/taerminal.toml",
 #	"~/.config/alacritty/theme/wombat.toml",
+#	"~/.config/alacritty/theme/zenburn.toml",
+
 ]
 
 [terminal]
