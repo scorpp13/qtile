@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # This script converts some video to a GIF. It prompts the user to select an
 # video file with `gum filter` Set the frame rate, desired width, and max
@@ -13,3 +13,5 @@ BASENAME=$(basename "$INPUT")
 BASENAME="${BASENAME%%.*}"
 
 gum spin --title "Converting to GIF" -- ffmpeg -i "$INPUT" -vf "fps=$FRAMERATE,scale=$WIDTH:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=$MAXCOLORS[p];[s1][p]paletteuse" "$BASENAME.gif"
+echo ''
+read -rp "Press Enter to continue" </dev/tty

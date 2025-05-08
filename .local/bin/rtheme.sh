@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 gum style \
 	--foreground 13 --border-foreground 13 --border rounded --bold \
@@ -61,3 +61,4 @@ echo ''
 gum style --foreground 2 --faint 'powermenu theme'
 gum style --foreground 10 --bold $(awk '{print $2}' ~/.config/rofi/powermenu_theme.rasi)
 echo ''
+read -rp "Press Enter to continue" </dev/tty

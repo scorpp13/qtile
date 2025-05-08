@@ -292,9 +292,7 @@ def init_widgets_list():
             location={"Svetlogorsk, Russia":"Калининград:"},
             format="%C %t %w %h",
             units="M",
-            mouse_callbacks={"Button1": lazy.spawn(
-                ["kitty", "--hold", "-e", "curl", "ru.wttr.in/Kaliningrad?format=v2d"]
-            )},
+            mouse_callbacks={"Button1": lazy.spawn(lbin + "wttr.sh")},
             foreground=Color5,
             fontshadow=Color1,
         ),

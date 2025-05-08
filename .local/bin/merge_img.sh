@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # This script merges some images to one file. It prompts the user to select an
 # image file(s); set the number of columns and lines for an output file.
@@ -11,3 +11,5 @@ FORMAT=$(gum input --prompt "Merging format: " --placeholder "columns X lines")
 gum confirm "Merge selected images?" && \
 gum spin --title "Merging..." -- sleep 1 && cd $DIR && \
 montage $INPUT -tile $FORMAT -geometry +0+0 $OUTPUT.$EXTENSION
+echo ''
+read -rp "Press Enter to continue" </dev/tty

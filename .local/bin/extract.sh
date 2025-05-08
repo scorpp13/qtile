@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 DIR=$(gum file --directory $HOME)
 INPUT=$(ls $DIR | gum choose --limit 1)
@@ -23,3 +23,5 @@ if [ -f $INPUT ] ; then
 		else
 			echo "'$INPUT' isn't a valid archive file"
 fi
+echo ''
+read -rp "Press Enter to continue" </dev/tty
