@@ -235,7 +235,7 @@ def init_widgets_list():
         widget.LaunchBar(
             foreground=Color4,
             fontshadow=Color1,
-            progs=[("","vivaldi"), ("","alacritty -e vifm"), ("","telegram-desktop")],
+            progs=[("","vivaldi"), ("","alacritty -e vifm")],
         ),
         widget.TextBox(
             background=Color0,

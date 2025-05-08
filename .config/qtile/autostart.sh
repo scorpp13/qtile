@@ -5,3 +5,4 @@ picom --daemon &
 waypaper --restore &
 nm-applet &
 blueman-applet &
+telegram-desktop -autostart
