@@ -1,3 +1,88 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" version="1.1">
- <path style="fill:#dfdfdf" d="M 1.80039,2 C 1.3571901,2 0.99960886,2.3464547 0.99960886,2.7773437 V 4 H 15.000391 V 2.7773437 C 15.000391,2.3464548 14.64281,2 14.199609,2 Z M 0.99960886,5 v 8.222656 C 0.99960886,13.653545 1.3571901,14 1.80039,14 H 3.9999995 V 12.794922 C 3.9999995,12.354315 4.3575807,12 4.8007807,12 H 11.199219 C 11.642419,12 12,12.354315 12,12.794922 V 14 h 2.199609 c 0.443201,0 0.754351,-0.348964 0.800782,-0.777344 V 5 Z"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="16"
+   height="16"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="user-desktop-symbolic.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#SVGID_1_-3-2-7"
+       id="radialGradient3"
+       cx="7.0636983"
+       cy="16.082384"
+       fx="7.0636983"
+       fy="16.082384"
+       r="7.000391"
+       gradientTransform="matrix(2.8444447e-8,-2.2795684,2.1824279,0,-17.593635,33.549234)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       id="SVGID_1_-3-2-7"
+       cx="-159.43106"
+       cy="15.462561"
+       r="64.706802"
+       gradientTransform="matrix(-0.89413329,0,0,0.96304834,-80.753654,49.330428)"
+       gradientUnits="userSpaceOnUse"
+       fx="-159.43106"
+       fy="15.462561">
+      <stop
+         offset="0"
+         style="stop-color:#006fff;stop-opacity:1;"
+         id="stop1-6-9-5" />
+      <stop
+         offset="1"
+         style="stop-color:#15baff;stop-opacity:1;"
+         id="stop2-7-1-3" />
+    </radialGradient>
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect3"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0.99543218,0,1 @ F,0,0,1,0,0.99543218,0,1 @ F,0,0,1,0,0.99543218,0,1 @ F,0,0,1,0,0.99543218,0,1 | F,0,0,1,0,0.99543218,0,1 @ F,0,0,1,0,0.99543218,0,1 @ F,0,1,1,0,0.5076336,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,1,1,0,0.5076336,0,1 @ F,0,0,1,0,0.99543218,0,1 @ F,0,0,1,0,0.99543218,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="73.9375"
+     inkscape:cx="8"
+     inkscape:cy="8"
+     inkscape:current-layer="svg1" />
+  <g
+     id="g1"
+     transform="matrix(1.1420118,0,0,1.1420118,-1.1360947,-1.1360947)">
+    <path
+       style="color:#dfdfdf;fill:url(#radialGradient3)"
+       class="ColorScheme-Text"
+       d="m 0.9996092,2.9954322 0,0.00914 A 0.99543218,0.99543218 45 0 0 1.9950414,4 H 14.004959 a 0.99543218,0.99543218 135 0 0 0.995432,-0.9954322 v -0.00914 A 0.99543218,0.99543218 45 0 0 14.004959,2 H 1.9950414 A 0.99543218,0.99543218 135 0 0 0.9996092,2.9954322 Z m 0,3 V 13.004568 A 0.99543218,0.99543218 45 0 0 1.9950414,14 H 3.4923663 A 0.5076336,0.5076336 135 0 0 3.9999999,13.492366 V 12.794922 C 3.9999999,12.354315 4.3575811,12 4.8007811,12 H 11.199219 C 11.642419,12 12,12.354315 12,12.794922 v 0.697444 A 0.5076336,0.5076336 45 0 0 12.507634,14 h 1.497325 a 0.99543218,0.99543218 135 0 0 0.995432,-0.995432 V 5.9954322 A 0.99543218,0.99543218 45 0 0 14.004959,5 H 1.9950414 A 0.99543218,0.99543218 135 0 0 0.9996092,5.9954322 Z"
+       id="path1"
+       sodipodi:nodetypes="ccccccccsssscccc"
+       inkscape:path-effect="#path-effect3"
+       inkscape:original-d="M 0.9996092,2 V 4 H 15.000391 V 2 Z m 0,3 v 9 H 3.9999999 V 12.794922 C 3.9999999,12.354315 4.3575811,12 4.8007811,12 H 11.199219 C 11.642419,12 12,12.354315 12,12.794922 V 14 h 3.000391 V 5 Z" />
+  </g>
 </svg>

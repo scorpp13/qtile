@@ -288,6 +288,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border-radius: 12px;
   margin: 6px;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.35);
+  border: 2px solid #83b9b8;
 }
 
 .menu-arrow,

@@ -718,7 +718,7 @@ window.solid-csd > box.vertical > box.vertical > toolbar.horizontal > toolitem >
   padding: 0;
 }
 
-.pluma-window paned.horizontal box.vertical box.horizontal button.flat, .gedit-document-panel row button.flat, .nautilus-window .floating-bar button, placessidebar.sidebar row button.sidebar-button, notebook > header tab button.flat, spinbutton > button {
+.pluma-window paned.horizontal box.vertical box.horizontal button.flat, .gedit-document-panel row button.flat, .nautilus-window .floating-bar button, placessidebar.sidebar row button.sidebar-button, notebook > header tab button.flat, notebook > header tab button.close-button, spinbutton > button {
   min-height: 24px;
   min-width: 24px;
   padding: 0;
@@ -727,8 +727,8 @@ window.solid-csd > box.vertical > box.vertical > toolbar.horizontal > toolitem >
 
 button {
   min-height: 24px;
-  min-width: 16px;
-  padding: 6px 10px;
+  min-width: 24px;
+  padding: 6px 6px;
   border-radius: 6px;
   font-weight: 500;
 }
@@ -2272,19 +2272,14 @@ notebook > header tab > box:drop(active) {
   color: rgba(0, 0, 0, 0.87);
 }
 
-notebook > header tab button.flat:last-child {
+notebook > header tab button.flat:last-child, notebook > header tab button.close-button:last-child {
   margin-left: 6px;
   margin-right: -6px;
 }
 
-notebook > header tab button.flat:first-child {
+notebook > header tab button.flat:first-child, notebook > header tab button.close-button:first-child {
   margin-left: -6px;
   margin-right: 6px;
-}
-
-notebook > header tab button.close-button {
-  min-width: 24px;
-  min-height: 24px;
 }
 
 notebook > header.top tabs > tab + tab, notebook > header.bottom tabs > tab + tab {
@@ -6356,6 +6351,18 @@ window.background:not(.csd) > window > menu menuitem {
   padding: 4px;
 }
 
+#TopToolbars .toolbar {
+  background: none;
+}
+
+#Statusbar {
+  padding: 3px 0 3px 8px;
+}
+
+#Statusbar spinbutton, #Statusbar box > button.flat {
+  margin: 3px 0;
+}
+
 #CanvasTable button {
   min-height: 16px;
   min-width: 16px;
@@ -6394,8 +6401,21 @@ window.background:not(.csd) > window > menu menuitem {
   padding: 8px 4px;
 }
 
-scrolledwindow#DialogNotebook > viewport.frame > notebook.frame button.close-button image {
-  padding: 4px;
+window.bright.symbolic scrolledwindow > viewport.frame > notebook tabs > tab {
+  padding: 3px 6px;
+}
+
+window.bright.symbolic scrolledwindow > viewport.frame > notebook tabs > tab button.close-button {
+  margin: 4px 0;
+}
+
+popover#ContextMenu {
+  border-radius: 12px;
+  background-clip: content-box;
+}
+
+popover#ContextMenu modelbutton.flat {
+  border-radius: 6px;
 }
 
 window.background > grid > widget > widget > scrolledwindow > viewport > grid > box > box > frame > box {

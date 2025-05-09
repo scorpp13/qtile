@@ -1,8 +1,108 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" version="1.1">
- <defs>
-  <style id="current-color-scheme" type="text/css">
-   .ColorScheme-Text { color:#444444; } .ColorScheme-Highlight { color:#4285f4; } .ColorScheme-NeutralText { color:#ff9800; } .ColorScheme-PositiveText { color:#4caf50; } .ColorScheme-NegativeText { color:#f44336; }
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="16"
+   height="16"
+   version="1.1"
+   viewBox="0 0 16 16"
+   id="svg1"
+   sodipodi:docname="folder-recent.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="35.368832"
+     inkscape:cx="1.5126312"
+     inkscape:cy="10.220863"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect4"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 | F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 | F,0,0,1,0,1.0007535,0,1 @ F,0,0,1,0,2.0015069,0,1 @ F,0,0,1,0,1.0007535,0,1 @ F,0,0,1,0,1.0007535,0,1 @ F,0,0,1,0,0.15511082,0,1 @ F,0,0,1,0,1.0007535,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <style
+       id="current-color-scheme"
+       type="text/css">
+   .ColorScheme-Text { color:#dfdfdf; } .ColorScheme-Highlight { color:#4285f4; } .ColorScheme-NeutralText { color:#ff9800; } .ColorScheme-PositiveText { color:#4caf50; } .ColorScheme-NegativeText { color:#f44336; }
   </style>
- </defs>
- <path style="fill:currentColor" class="ColorScheme-Text" d="M 8,1 A 7,7 0 0 0 1,8 7,7 0 0 0 8,15 7,7 0 0 0 15,8 7,7 0 0 0 8,1 Z M 8,3 A 5,5 0 0 1 13,8 5,5 0 0 1 8,13 5,5 0 0 1 3,8 5,5 0 0 1 8,3 Z M 7,5 V 9 H 11 V 7 H 9 V 5 Z"/>
+    <radialGradient
+       id="SVGID_1_-3-2-7"
+       cx="-159.43106"
+       cy="15.462561"
+       r="64.706802"
+       gradientTransform="matrix(-0.89413329,0,0,0.96304834,-80.753654,49.330428)"
+       gradientUnits="userSpaceOnUse"
+       fx="-159.43106"
+       fy="15.462561">
+      <stop
+         offset="0"
+         style="stop-color:#006fff;stop-opacity:1;"
+         id="stop1-6-9-5" />
+      <stop
+         offset="1"
+         style="stop-color:#15baff;stop-opacity:1;"
+         id="stop2-7-1-3" />
+    </radialGradient>
+    <radialGradient
+       id="radialGradient3"
+       cx="-159.43106"
+       cy="15.462561"
+       r="64.706802"
+       gradientTransform="matrix(-0.89413329,0,0,0.96304834,-80.753654,49.330428)"
+       gradientUnits="userSpaceOnUse"
+       fx="-159.43106"
+       fy="15.462561">
+      <stop
+         offset="0"
+         style="stop-color:#006fff;stop-opacity:1;"
+         id="stop1" />
+      <stop
+         offset="1"
+         style="stop-color:#15baff;stop-opacity:1;"
+         id="stop2" />
+    </radialGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#SVGID_1_-3-2-7"
+       id="radialGradient4"
+       cx="17.416046"
+       cy="18.960854"
+       fx="17.416046"
+       fy="18.960854"
+       r="7"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0,-2.415562,2.415562,0,-25.453907,61.416878)" />
+  </defs>
+  <path
+     style="fill:url(#radialGradient4)"
+     class="ColorScheme-Text"
+     d="M 8,1 C 4.1340068,1 1,4.1340068 1,8 c 0,3.865993 3.1340068,7 7,7 3.865993,0 7,-3.134007 7,-7 C 15,4.1340068 11.865993,1 8,1 Z m 0,2 c 2.761424,0 5,2.2385763 5,5 0,2.761424 -2.238576,5 -5,5 C 5.2385763,13 3,10.761424 3,8 3,5.2385763 5.2385763,3 8,3 Z M 7,6.0007535 V 6.9984931 A 2.0015069,2.0015069 45 0 0 9.0015069,9 H 9.9992465 A 1.0007535,1.0007535 135 0 0 11,7.9992465 1.0000003,1.0000003 44.956828 0 0 9.9992465,7 H 9.1551108 A 0.15511082,0.15511082 45 0 1 9,6.8448892 V 6.0007535 A 1.0007535,1.0007535 45 0 0 7.9992465,5 1.0000003,1.0000003 134.95683 0 0 7,6.0007535 Z"
+     id="path1"
+     inkscape:path-effect="#path-effect4"
+     inkscape:original-d="M 8,1 A 7,7 0 0 0 1,8 7,7 0 0 0 8,15 7,7 0 0 0 15,8 7,7 0 0 0 8,1 Z M 8,3 A 5,5 0 0 1 13,8 5,5 0 0 1 8,13 5,5 0 0 1 3,8 5,5 0 0 1 8,3 Z M 7,5 v 4 h 4 V 7 H 9 V 5 Z"
+     transform="matrix(1.1373283,0,0,1.1373283,-1.0986267,-1.0986267)" />
 </svg>

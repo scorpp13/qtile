@@ -51,7 +51,8 @@ set showcmd				" Show partial command you type in the last line of the screen
 set showmode			" Show the mode you are on the last line
 set showmatch			" Show matching words during a search
 set t_Co=256			" 256-colors terminal
-set background=dark
+"set background=dark
+colorscheme one
 "colorscheme PaperColor
 
 filetype on				" Enable type file detection

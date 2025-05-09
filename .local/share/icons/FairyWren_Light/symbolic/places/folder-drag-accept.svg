@@ -1,9 +1,171 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
- <defs>
-  <style id="current-color-scheme" type="text/css">
-   .ColorScheme-Text { color:#444444; } .ColorScheme-Highlight { color:#4285f4; } .ColorScheme-NeutralText { color:#ff9800; } .ColorScheme-PositiveText { color:#4caf50; } .ColorScheme-NegativeText { color:#f44336; }
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
+   version="1.1"
+   id="svg2"
+   sodipodi:docname="folder-drag-accept.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="40.374765"
+     inkscape:cx="3.0093054"
+     inkscape:cy="8.0124305"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs1">
+    <style
+       id="current-color-scheme"
+       type="text/css">
+   .ColorScheme-Text { color:#dfdfdf; } .ColorScheme-Highlight { color:#4285f4; } .ColorScheme-NeutralText { color:#ff9800; } .ColorScheme-PositiveText { color:#4caf50; } .ColorScheme-NegativeText { color:#f44336; }
   </style>
- </defs>
- <path style="fill:currentColor;opacity:.35" class="ColorScheme-Text" d="M 2 1 C 2 1 1 1 1 2 L 1 7 C 1 6 2 6 2 6 L 7 6 L 9 8 L 14 8 C 14 8 15 8 15 9 L 15 4 C 15 3 14 3 14 3 L 9 3 L 7 1 L 2 1 z"/>
- <path style="fill:currentColor" class="ColorScheme-Text" d="M 2 7 C 2 7 1 7 1 8 L 1 13 C 1 13 1 14 2 14 L 14 14 C 14 14 15 14 15 13 L 15 10 C 15 9 14 9 14 9 L 9 9 L 7 7 L 2 7 z"/>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#SVGID_1_-3-2-7"
+       id="radialGradient2"
+       cx="15.076324"
+       cy="16.808079"
+       fx="15.076324"
+       fy="16.808079"
+       r="7"
+       gradientTransform="matrix(-0.7547149,-2.8166344,2.6154463,-0.7008067,-12.40633,73.577884)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       id="SVGID_1_-3-2-7"
+       cx="-159.43106"
+       cy="15.462561"
+       r="64.706802"
+       gradientTransform="matrix(-0.89413329,0,0,0.96304834,-80.753654,49.330428)"
+       gradientUnits="userSpaceOnUse"
+       fx="-159.43106"
+       fy="15.462561">
+      <stop
+         offset="0"
+         style="stop-color:#006fff;stop-opacity:1;"
+         id="stop1-6-9-5" />
+      <stop
+         offset="1"
+         style="stop-color:#15baff;stop-opacity:1;"
+         id="stop2-7-1-3" />
+    </radialGradient>
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect1"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,2.2050452,0,1 @ F,0,1,1,0,2.2050452,0,1 @ F,0,1,1,0,2.2050452,0,1 @ F,0,1,1,0,2.2050452,0,1 @ F,0,0,1,0,0.95487539,0,1 @ F,0,0,1,0,0.95487539,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <radialGradient
+       id="SVGID_1_-3-2-7-3"
+       cx="-159.43106"
+       cy="15.462561"
+       r="64.706802"
+       gradientTransform="matrix(-0.89413329,0,0,0.96304834,-80.753654,49.330428)"
+       gradientUnits="userSpaceOnUse"
+       fx="-159.43106"
+       fy="15.462561">
+      <stop
+         offset="0"
+         style="stop-color:#006fff;stop-opacity:1;"
+         id="stop1-6-9-5-5" />
+      <stop
+         offset="1"
+         style="stop-color:#15baff;stop-opacity:1;"
+         id="stop2-7-1-3-6" />
+    </radialGradient>
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect1-2"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,2.2050452,0,1 @ F,0,1,1,0,2.2050452,0,1 @ F,0,1,1,0,2.2050452,0,1 @ F,0,1,1,0,2.2050452,0,1 @ F,0,0,1,0,0.95487539,0,1 @ F,0,0,1,0,0.95487539,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <radialGradient
+       id="SVGID_1_-3-2-7-3-9"
+       cx="-159.43106"
+       cy="15.462561"
+       r="64.706802"
+       gradientTransform="matrix(-0.89413329,0,0,0.96304834,-80.753654,49.330428)"
+       gradientUnits="userSpaceOnUse"
+       fx="-159.43106"
+       fy="15.462561">
+      <stop
+         offset="0"
+         style="stop-color:#006fff;stop-opacity:1;"
+         id="stop1-6-9-5-5-3" />
+      <stop
+         offset="1"
+         style="stop-color:#15baff;stop-opacity:1;"
+         id="stop2-7-1-3-6-6" />
+    </radialGradient>
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect1-2-0"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,2.2050452,0,1 @ F,0,1,1,0,2.2050452,0,1 @ F,0,1,1,0,2.2050452,0,1 @ F,0,1,1,0,2.2050452,0,1 @ F,0,0,1,0,0.95487539,0,1 @ F,0,0,1,0,0.95487539,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#SVGID_1_-3-2-7"
+       id="radialGradient1"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.7547149,-2.8166344,2.6154463,-0.7008067,-12.40633,73.577884)"
+       cx="15.076324"
+       cy="16.808079"
+       fx="15.076324"
+       fy="16.808079"
+       r="7" />
+  </defs>
+  <path
+     style="fill:url(#radialGradient2);stroke-width:1.03476"
+     d="M 2.5270676,6.1911839 C 1.1375552,6.1915033 0.01121239,7.317846 0.01089264,8.7073586 v 3.4114884 c 3.1975e-4,1.389512 1.12666256,2.515855 2.51617496,2.516175 H 13.472933 c 1.389512,-3.2e-4 2.515854,-1.126663 2.516174,-2.516175 V 10.991116 C 15.989903,9.6008133 14.863235,8.4732391 13.472933,8.4729197 H 10.23121 C 9.5338798,8.4727804 8.6855529,8.0165939 8.1924658,7.5235068 L 7.45075,6.7817911 C 6.9569988,6.2883774 6.4668213,6.1907873 5.7687901,6.1911839 Z"
+     id="path8" />
+  <path
+     style="opacity:0.538502;fill:url(#radialGradient1);stroke-width:1.03476"
+     d="M 2.5270676,1.3649793 C 1.1375552,1.3652987 0.01121239,2.4916414 0.01089264,3.8811539 V 7.8827808 C 0.01121239,6.4932682 1.1375552,5.3669256 2.5270676,5.3666063 h 3.2417225 c 0.698321,1.392e-4 1.6498615,0.2778763 2.1432815,0.7720311 L 8.6537875,6.878332 C 9.1467119,7.3719918 9.5335901,7.6496877 10.23121,7.6503631 h 3.241723 c 1.389511,3.195e-4 2.515855,1.1266621 2.516174,2.5161739 V 6.1649107 C 15.989903,4.774609 14.863235,3.6470345 13.472933,3.6467152 H 10.23121 C 9.5331793,3.6471117 8.8635979,3.3701188 8.3698478,2.876705 L 7.6301528,2.1349893 C 7.1364017,1.6415757 6.4668203,1.3645828 5.7687901,1.3649793 Z"
+     id="path7" />
 </svg>

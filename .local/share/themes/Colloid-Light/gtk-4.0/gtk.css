@@ -43,60 +43,6 @@
 @define-color dark_3 #3d3846;
 @define-color dark_4 #241f31;
 @define-color dark_5 #000000;
-:root {
-  --accent-blue: #3584e4;
-  --accent-teal: #2190a4;
-  --accent-green: #3a944a;
-  --accent-yellow: #c88800;
-  --accent-orange: #ed5b00;
-  --accent-red: #e62d42;
-  --accent-pink: #d56199;
-  --accent-purple: #9141ac;
-  --accent-slate: #6f8396;
-  --accent-bg-color: @accent_bg_color;
-  --accent-fg-color: @accent_fg_color;
-  --destructive-bg-color: @destructive_bg_color;
-  --destructive-fg-color: @destructive_fg_color;
-  --success-bg-color: @success_bg_color;
-  --success-fg-color: @success_fg_color;
-  --warning-bg-color: @warning_bg_color;
-  --warning-fg-color: @warning_fg_color;
-  --error-bg-color: @error_bg_color;
-  --error-fg-color: @error_fg_color;
-  --window-bg-color: @window_bg_color;
-  --window-fg-color: @window_fg_color;
-  --view-bg-color: @view_bg_color;
-  --view-fg-color: @view_fg_color;
-  --headerbar-bg-color: @headerbar_bg_color;
-  --headerbar-fg-color: @headerbar_fg_color;
-  --headerbar-border-color: @headerbar_border_color;
-  --headerbar-backdrop-color: @headerbar_backdrop_color;
-  --headerbar-shade-color: @headerbar_shade_color;
-  --headerbar-darker-shade-color: @headerbar_darker_shade_color;
-  --sidebar-bg-color: @sidebar_bg_color;
-  --sidebar-fg-color: @sidebar_fg_color;
-  --sidebar-backdrop-color: @sidebar_backdrop_color;
-  --sidebar-border-color: @sidebar_border_color;
-  --sidebar-shade-color: @sidebar_shade_color;
-  --secondary-sidebar-bg-color: @secondary_sidebar_bg_color;
-  --secondary-sidebar-fg-color: @secondary_sidebar_fg_color;
-  --secondary-sidebar-backdrop-color: @secondary_sidebar_backdrop_color;
-  --secondary-sidebar-border-color: @secondary_sidebar_border_color;
-  --secondary-sidebar-shade-color: @secondary_sidebar_shade_color;
-  --card-bg-color: @card_bg_color;
-  --card-fg-color: @card_fg_color;
-  --card-shade-color: @card_shade_color;
-  --dialog-bg-color: @dialog_bg_color;
-  --dialog-fg-color: @dialog_fg_color;
-  --popover-bg-color: @popover_bg_color;
-  --popover-fg-color: @popover_fg_color;
-  --popover-shade-color: @popover_shade_color;
-  --thumbnail-bg-color: @thumbnail_bg_color;
-  --thumbnail-fg-color: @thumbnail_fg_color;
-  --shade-color: @shade_color;
-  --scrollbar-outline-color: @scrollbar_outline_color;
-}
-
 @keyframes ripple {
   to {
     background-size: 1000% 1000%;
@@ -790,7 +736,7 @@ button.opaque:checked:active {
   background-image: image(rgba(0, 0, 0, 0.3));
 }
 
-.nautilus-window .floating-bar button {
+.floating-bar button {
   min-height: 24px;
   min-width: 24px;
   padding: 0;
@@ -1098,7 +1044,7 @@ button.link, button.link:hover, button.link:active, button.link:checked, columnv
 }
 
 button.color {
-  padding: 5px;
+  padding: 6px;
 }
 
 button.color > colorswatch:only-child {
@@ -1152,8 +1098,8 @@ menubutton.suggested-action > button, menubutton.suggested-action > button:check
 
 menubutton.image-button > button {
   min-width: 24px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 menubutton.card > button {
@@ -1207,8 +1153,8 @@ splitbutton > menubutton > button {
 
 splitbutton.image-button > button {
   min-width: 24px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 splitbutton.text-button.image-button > button, splitbutton.image-text-button > button {
@@ -1663,6 +1609,7 @@ columnview > header > button, treeview.view > header > button, window.print tree
   line-height: 100%;
   border-left: 1px solid alpha(currentColor,0.12);
   border-bottom: 1px solid alpha(currentColor,0.12);
+  background-clip: padding-box;
 }
 
 columnview > header > button:first-child, treeview.view > header > button:first-child, window.print treeview.dialog-action-box > header > button:first-child {
@@ -1747,6 +1694,10 @@ columnview.data-table > listview > row > cell, treeview.data-table.view > listvi
 columnview ~ undershoot.top, treeview.view ~ undershoot.top, window.print treeview.dialog-action-box ~ undershoot.top {
   box-shadow: none;
   background: linear-gradient(to bottom, alpha(@shade_color,0.75), transparent 6px);
+}
+
+columnview ~ undershoot.top, treeview.view ~ undershoot.top, window.print treeview.dialog-action-box ~ undershoot.top {
+  box-shadow: none;
 }
 
 columnview row:not(:selected) cell editablelabel:not(.editing):focus-within, treeview.view row:not(:selected) cell editablelabel:not(.editing):focus-within, window.print treeview.dialog-action-box row:not(:selected) cell editablelabel:not(.editing):focus-within {
@@ -1980,7 +1931,7 @@ infobar .close {
  * GtkStatusBar *
  ****************/
 statusbar {
-  padding: 6px 10px 6px 10px;
+  padding: 6px 10px;
 }
 
 /***************
@@ -2912,10 +2863,6 @@ windowcontrols > button.minimize:hover, windowcontrols > button.minimize:active,
   box-shadow: none;
 }
 
-windowcontrols > button.minimize:active > image, windowcontrols > button.maximize:active > image, windowcontrols > button.close:active > image {
-  background-color: alpha(black,0.12);
-}
-
 windowcontrols > button.minimize:hover, windowcontrols > button.minimize:active, windowcontrols > button.maximize:hover, windowcontrols > button.maximize:active, windowcontrols > button.close:hover, windowcontrols > button.close:active {
   color: white;
 }
@@ -2933,7 +2880,7 @@ windowcontrols > button.minimize > image {
 }
 
 windowcontrols > button.minimize:active > image {
-  background-color: mix(@headerbar_fg_color,#fdbe04,0.75);
+  background-color: mix(black,#fdbe04,0.88);
 }
 
 windowcontrols > button.maximize > image {
@@ -2941,7 +2888,7 @@ windowcontrols > button.maximize > image {
 }
 
 windowcontrols > button.maximize:active > image {
-  background-color: mix(@headerbar_fg_color,#38c76a,0.75);
+  background-color: mix(black,#38c76a,0.88);
 }
 
 windowcontrols > button.close > image {
@@ -2949,7 +2896,7 @@ windowcontrols > button.close > image {
 }
 
 windowcontrols > button.close:active > image {
-  background-color: mix(@headerbar_fg_color,#fd5f51,0.75);
+  background-color: mix(black,#fd5f51,0.88);
 }
 
 windowcontrols {
@@ -3521,38 +3468,6 @@ row:focus:focus-visible {
   outline-offset: -2px;
 }
 
-.osd row:focus:focus-visible {
-  outline-color: rgba(255, 255, 255, 0.5);
-}
-
-.osd row.activatable:hover {
-  background-color: alpha(currentColor,0.07);
-}
-
-.osd row.activatable:active {
-  background-color: alpha(currentColor,0.16);
-}
-
-.osd row.activatable.has-open-popup {
-  background-color: alpha(currentColor,0.07);
-}
-
-.osd row.activatable:selected:hover {
-  background-color: alpha(currentColor,0.13);
-}
-
-.osd row.activatable:selected:active {
-  background-color: alpha(currentColor,0.19);
-}
-
-.osd row.activatable:selected.has-open-popup {
-  background-color: alpha(currentColor,0.13);
-}
-
-.osd row:selected {
-  background-color: alpha(currentColor,0.1);
-}
-
 row.activatable {
   transition: all 75ms cubic-bezier(0, 0, 0.2, 1), background-size 300ms cubic-bezier(0, 0, 0.2, 1), background-image 1200ms cubic-bezier(0, 0, 0.2, 1), font-weight 0;
   box-shadow: none;
@@ -3594,6 +3509,38 @@ row.activatable:selected.has-open-popup {
 
 row:selected {
   background-color: alpha(@accent_bg_color,0.25);
+}
+
+.osd row:focus:focus-visible {
+  outline-color: rgba(255, 255, 255, 0.5);
+}
+
+.osd row.activatable:hover {
+  background-color: alpha(currentColor,0.07);
+}
+
+.osd row.activatable:active {
+  background-color: alpha(currentColor,0.16);
+}
+
+.osd row.activatable.has-open-popup {
+  background-color: alpha(currentColor,0.07);
+}
+
+.osd row.activatable:selected:hover {
+  background-color: alpha(currentColor,0.13);
+}
+
+.osd row.activatable:selected:active {
+  background-color: alpha(currentColor,0.19);
+}
+
+.osd row.activatable:selected.has-open-popup {
+  background-color: alpha(currentColor,0.13);
+}
+
+.osd row:selected {
+  background-color: alpha(currentColor,0.1);
 }
 
 /*******************************************************
@@ -4425,7 +4372,7 @@ window.dialog.message .dialog-action-area > button {
 }
 
 window.dialog.message .dialog-action-area > button.suggested-action {
-  color: @accent_color;
+  color: @accent_bg_color;
 }
 
 window.dialog.message .dialog-action-area > button.destructive-action {
@@ -4464,83 +4411,111 @@ window.dialog-window.alert {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 15px 16px 2px rgba(0, 0, 0, 0.14), 0 6px 18px 5px rgba(0, 0, 0, 0.12), 0 0 36px transparent, 0 0 0 1px @headerbar_darker_shade_color;
 }
 
-window.messagedialog .message-area,
+window.messagedialog .message-area {
+  padding-top: 32px;
+  padding-bottom: 12px;
+  border-spacing: 24px;
+}
+
+window.messagedialog .message-area.has-heading.has-body {
+  border-spacing: 10px;
+}
+
+window.messagedialog .message-area.has-heading.has-body > .child {
+  margin-top: 8px;
+}
+
+window.messagedialog .message-area > .heading-bin, window.messagedialog .message-area > .body, window.messagedialog .message-area > .child {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+window.messagedialog .response-area {
+  padding: 6px;
+  border-spacing: 6px;
+}
+
+window.messagedialog .response-area > button {
+  min-height: 24px;
+  min-width: 60px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  margin: 0;
+}
+
+window.messagedialog .response-area > button.suggested {
+  color: @accent_color;
+}
+
+window.messagedialog .response-area > button.destructive {
+  color: @destructive_color;
+}
+
+window.messagedialog .response-area > separator {
+  background: none;
+  margin: 3px;
+}
+
 dialog.alert.floating .message-area {
   padding-top: 32px;
   padding-bottom: 12px;
   border-spacing: 24px;
 }
 
-window.messagedialog .message-area.has-heading.has-body,
 dialog.alert.floating .message-area.has-heading.has-body {
   border-spacing: 10px;
 }
 
-window.messagedialog .message-area.has-heading.has-body > .child,
 dialog.alert.floating .message-area.has-heading.has-body > .child {
   margin-top: 8px;
 }
 
-window.messagedialog .message-area > .heading-bin, window.messagedialog .message-area > .body, window.messagedialog .message-area > .child,
-dialog.alert.floating .message-area > .heading-bin,
-dialog.alert.floating .message-area > .body,
-dialog.alert.floating .message-area > .child {
+dialog.alert.floating .message-area > .heading-bin, dialog.alert.floating .message-area > .body, dialog.alert.floating .message-area > .child {
   padding-left: 24px;
   padding-right: 24px;
 }
 
-window.messagedialog .response-area,
 dialog.alert.floating .response-area {
   padding: 12px;
   padding-top: 18px;
   border-spacing: 12px;
 }
 
-window.messagedialog .response-area > button,
 dialog.alert.floating .response-area > button {
   min-height: 24px;
   min-width: 60px;
-  padding: 10px 14px;
+  padding: 8px 14px;
   border-radius: 6px;
   margin: 0;
 }
 
-window.messagedialog .response-area > button.suggested,
 dialog.alert.floating .response-area > button.suggested {
   color: @accent_color;
 }
 
-window.messagedialog .response-area > button.destructive,
 dialog.alert.floating .response-area > button.destructive {
   color: @destructive_color;
 }
 
-window.messagedialog.short .message-area,
 dialog.alert.floating.short .message-area {
   padding-top: 24px;
   border-spacing: 18px;
 }
 
-window.messagedialog.short .message-area > .heading-bin, window.messagedialog.short .message-area > .body, window.messagedialog.short .message-area > .child,
-dialog.alert.floating.short .message-area > .heading-bin,
-dialog.alert.floating.short .message-area > .body,
-dialog.alert.floating.short .message-area > .child {
+dialog.alert.floating.short .message-area > .heading-bin, dialog.alert.floating.short .message-area > .body, dialog.alert.floating.short .message-area > .child {
   padding-left: 18px;
   padding-right: 18px;
 }
 
-window.messagedialog.short .message-area.has-heading.has-body,
 dialog.alert.floating.short .message-area.has-heading.has-body {
   border-spacing: 6px;
 }
 
-window.messagedialog.short .response-area,
 dialog.alert.floating.short .response-area {
   padding: 18px;
   padding-top: 9px;
 }
 
-window.messagedialog.short .response-area > button,
 dialog.alert.floating.short .response-area > button {
   min-width: 0;
   padding: 8px 16px;
@@ -5051,8 +5026,8 @@ paned > separator {
 }
 
 paned > separator.wide {
-  min-width: 5px;
-  min-height: 5px;
+  min-width: 6px;
+  min-height: 6px;
 }
 
 paned.horizontal > separator:dir(ltr) {
@@ -5121,6 +5096,10 @@ popover > contents > scrolledwindow > viewport > list {
 
 popover > contents separator {
   background-color: alpha(currentColor,0.08);
+}
+
+popover > contents > statuspage.compact > scrolledwindow > viewport > box {
+  margin: 12px;
 }
 
 .osd popover, popover.touch-selection, popover.magnifier {
@@ -5357,7 +5336,7 @@ scale:focus:focus-visible > trough > slider {
 }
 
 scale > trough > slider {
-  background-color: @headerbar_bg_color;
+  background-color: @view_bg_color;
   box-shadow: 0 0 0 2px @accent_bg_color, 0 0 0 0 transparent;
   border-radius: 100%;
   transition: box-shadow 200ms ease-out;
@@ -5375,7 +5354,7 @@ scale:hover > trough > highlight, scale:active > trough > highlight {
 }
 
 scale:hover > trough > slider, scale:active > trough > slider {
-  background-color: @headerbar_backdrop_color;
+  background-color: @window_bg_color;
   box-shadow: 0 0 0 2px @accent_bg_color, 0 0 0 8px alpha(currentColor,0.12);
 }
 
@@ -5886,6 +5865,10 @@ window.shortcuts searchbar {
   background: linear-gradient(to bottom, alpha(@sidebar_shade_color,0.75), transparent 6px);
 }
 
+.sidebar-pane toolbarview.undershoot-top scrolledwindow columnview.view ~ undershoot.top, .sidebar-pane toolbarview.undershoot-top scrolledwindow treeview.view ~ undershoot.top, .sidebar-pane toolbarview.undershoot-top scrolledwindow window.print columnview.dialog-action-box ~ undershoot.top, window.print .sidebar-pane toolbarview.undershoot-top scrolledwindow columnview.dialog-action-box ~ undershoot.top, .sidebar-pane toolbarview.undershoot-top scrolledwindow window.print treeview.dialog-action-box ~ undershoot.top, window.print .sidebar-pane toolbarview.undershoot-top scrolledwindow treeview.dialog-action-box ~ undershoot.top, .content-pane toolbarview.undershoot-top scrolledwindow columnview.view ~ undershoot.top, .content-pane toolbarview.undershoot-top scrolledwindow treeview.view ~ undershoot.top, .content-pane toolbarview.undershoot-top scrolledwindow window.print columnview.dialog-action-box ~ undershoot.top, window.print .content-pane toolbarview.undershoot-top scrolledwindow columnview.dialog-action-box ~ undershoot.top, .content-pane toolbarview.undershoot-top scrolledwindow window.print treeview.dialog-action-box ~ undershoot.top, window.print .content-pane toolbarview.undershoot-top scrolledwindow treeview.dialog-action-box ~ undershoot.top {
+  box-shadow: none;
+}
+
 .sidebar-pane toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom, .content-pane toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
   box-shadow: inset 0 -1px alpha(currentColor,0.12);
   background: linear-gradient(to top, alpha(@sidebar_shade_color,0.75), transparent 6px);
@@ -6111,6 +6094,18 @@ stacksidebar row.needs-attention > label {
   color: @window_fg_color;
 }
 
+.navigation-sidebar > row {
+  min-height: 36px;
+  padding: 0 8px;
+  border-radius: 6px;
+  margin: 0 6px 3px;
+}
+
+.navigation-sidebar > separator {
+  margin: 6px;
+  background: none;
+}
+
 .navigation-sidebar row.activatable:hover {
   background-color: alpha(currentColor,0.07);
 }
@@ -6137,18 +6132,6 @@ stacksidebar row.needs-attention > label {
 
 .navigation-sidebar row:selected {
   background-color: alpha(currentColor,0.1);
-}
-
-.navigation-sidebar > separator {
-  margin: 6px;
-  background: none;
-}
-
-.navigation-sidebar > row {
-  min-height: 36px;
-  padding: 0 8px;
-  border-radius: 6px;
-  margin: 0 6px 3px;
 }
 
 @keyframes spin {
@@ -6336,7 +6319,7 @@ tabbar .box:backdrop > .end-action {
 tabbar tabbox {
   padding-bottom: 6px;
   padding-top: 6px;
-  min-height: 34px;
+  min-height: 36px;
 }
 
 tabbar tabbox > tabboxchild {
@@ -6461,8 +6444,8 @@ dnd tab {
 
 tabbar tab,
 dnd tab {
-  min-height: 26px;
-  padding: 4px;
+  min-height: 24px;
+  padding: 6px;
   border-radius: 6px;
 }
 
@@ -7012,7 +6995,7 @@ viewswitcher button.toggle > stack > box.wide {
 viewswitcherbar actionbar > revealer > box {
   padding-left: 0;
   padding-right: 0;
-  padding-top: 7px;
+  padding-top: 6px;
 }
 
 toolbarview > .top-bar .collapse-spacing viewswitcherbar actionbar > revealer > box,
@@ -7284,6 +7267,530 @@ leaflet button.number-button:active {
   background-color: alpha(currentColor,0.3);
 }
 
+label.primary-label, label.month-name, label.secondary-label {
+  font-size: 16pt;
+  font-weight: bold;
+  padding: 12px;
+}
+
+label.primary-label, label.month-name {
+  color: @accent_color;
+}
+
+label.secondary-label {
+  color: alpha(currentColor,0.45);
+}
+
+calendar-view {
+  font-size: 10pt;
+}
+
+calendar-view:selected {
+  color: @accent_color;
+  font-weight: bold;
+}
+
+calendar-view.header,
+label.header {
+  font-size: 10pt;
+  font-weight: bold;
+  color: alpha(currentColor,0.45);
+}
+
+calendar-view.current,
+weekgrid.current {
+  background-color: alpha(@accent_color,0.3);
+}
+
+popover.events {
+  background-color: @popover_bg_color;
+  color: @popover_fg_color;
+  padding: 0;
+}
+
+popover.events box {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+popover.events list {
+  color: @view_fg_color;
+  background-color: @view_bg_color;
+  border-radius: 6px;
+}
+
+popover.events scrolledwindow {
+  border-width: 0;
+}
+
+popover.events button {
+  border-radius: 6px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-style: solid none none;
+  box-shadow: none;
+}
+
+event {
+  margin: 1px;
+  font-size: 0.9rem;
+}
+
+event widget.content {
+  margin: 4px;
+}
+
+event.timed, event:not(.slanted):not(.slanted-start):not(.slanted-end) {
+  border-radius: 6px;
+}
+
+event.timed widget.edge {
+  border-radius: 3px;
+  min-width: 5px;
+}
+
+event.slanted-start, event.slanted-end:dir(rtl) {
+  padding-left: 16px;
+  border-radius: 0 3px 3px 0;
+}
+
+event.slanted-end, event.slanted-start:dir(rtl) {
+  padding-right: 16px;
+  border-radius: 3px 0 0 3px;
+}
+
+popover.event-popover,
+popover.event-popover > contents {
+  padding: 0;
+}
+
+.search-viewport {
+  background-color: @view_bg_color;
+}
+
+.calendar-list {
+  background-color: transparent;
+}
+
+.calendar-list > list {
+  border-radius: 4px;
+}
+
+.calendar-color-image {
+  -gtk-icon-filter: none;
+}
+
+image.calendar-color-image,
+button:active:not(:backdrop) .calendar-color-image,
+button:checked:not(:backdrop) .calendar-color-image,
+.calendars-list .calendar-color-image:not(:backdrop):not(:disabled),
+.calendar-list .calendar-color-image:not(:backdrop):not(:disabled),
+.sources-button:not(:backdrop):not(:disabled) .calendar-color-image {
+  -gtk-icon-shadow: 0 1px alpha(black,0.1);
+}
+
+datechooser {
+  color: @sidebar_fg_color;
+}
+
+datechooser navigator {
+  margin-right: 6px;
+  margin-left: 6px;
+  margin-bottom: 6px;
+}
+
+datechooser navigator label {
+  font-weight: bold;
+}
+
+datechooser navigator button.flat,
+datechooser navigator button.pill,
+datechooser navigator button.image-button {
+  min-height: 24px;
+  min-width: 24px;
+  padding: 6px;
+}
+
+datechooser .weeknum, datechooser .weekday {
+  color: alpha(currentColor,0.45);
+  font-size: smaller;
+}
+
+datechooser button.day {
+  font-size: 10pt;
+  font-weight: normal;
+  margin: 2px;
+  padding: 4px;
+  min-height: 24px;
+  min-width: 24px;
+  transition: none;
+}
+
+datechooser button.day dot {
+  background-color: currentColor;
+  border-radius: 50%;
+  min-height: 3px;
+  min-width: 3px;
+}
+
+datechooser button.day:selected, datechooser button.day.today:selected {
+  background-color: @accent_bg_color;
+  color: @accent_fg_color;
+  font-weight: bold;
+}
+
+datechooser button.day:selected dot, datechooser button.day.today:selected dot {
+  background-color: @accent_fg_color;
+}
+
+datechooser button.day.today {
+  color: @accent_bg_color;
+}
+
+datechooser button.day.today dot {
+  background-color: @accent_bg_color;
+}
+
+datechooser button.day.other-month:not(:hover), datechooser button.day.other-month:backdrop {
+  color: alpha(currentColor,0.35);
+}
+
+datechooser button.day.other-month:not(:hover) dot, datechooser button.day.other-month:backdrop dot {
+  background-color: alpha(currentColor,0.35);
+}
+
+datechooser button.day.other-month:hover:not(:backdrop) {
+  color: alpha(currentColor,0.45);
+}
+
+datechooser button.day.other-month:hover:not(:backdrop) dot {
+  background-color: alpha(currentColor,0.45);
+}
+
+.week-header {
+  padding: 0;
+}
+
+.week-header > box:first-child {
+  border-bottom: 1px solid alpha(currentColor,0.12);
+}
+
+.week-header .week-number {
+  font-size: 16pt;
+  font-weight: bold;
+  padding: 12px 12px 18px 12px;
+  color: alpha(currentColor,0.35);
+}
+
+.week-header.week-temperature {
+  font-size: 10pt;
+  font-weight: bold;
+  color: alpha(currentColor,0.45);
+}
+
+.week-header.lines {
+  color: alpha(currentColor,0.12);
+}
+
+weekhourbar > label {
+  font-size: 10pt;
+  padding: 4px 6px;
+}
+
+.week-view .lines {
+  color: alpha(currentColor,0.12);
+}
+
+weekgrid > widget.now-strip {
+  background-color: alpha(@accent_color,0.8);
+  margin: 0 0 0 1px;
+  min-height: 3px;
+}
+
+weekgrid:selected, weekgrid.dnd,
+.week-header:selected,
+.week-header.dnd {
+  background-color: alpha(@accent_color,0.25);
+}
+
+monthcell {
+  border: solid 1px alpha(currentColor,0.12);
+  border-width: 1px 0 0 1px;
+  background-color: transparent;
+  transition: background-color 200ms;
+}
+
+monthcell:hover:not(.out-of-month):not(.today) {
+  background-color: @dialog_bg_color;
+  transition: background-color 200ms;
+  color: currentColor;
+}
+
+monthcell:selected {
+  background-color: alpha(@accent_color,0.1);
+}
+
+monthcell:selected:hover {
+  background-color: alpha(@accent_color,0.2);
+}
+
+monthcell:selected label.day-label {
+  font-weight: bold;
+}
+
+monthcell:nth-child(7n + 1) {
+  border-left-width: 0;
+}
+
+monthcell.today {
+  background-color: alpha(@accent_color,0.2);
+}
+
+monthcell.today:hover {
+  background-color: alpha(@accent_color,0.3);
+  color: @accent_color;
+}
+
+monthcell.today:selected {
+  background-color: alpha(@accent_color,0.25);
+}
+
+monthcell.today:selected:hover {
+  background-color: alpha(@accent_color,0.35);
+}
+
+monthcell label {
+  color: currentColor;
+  font-size: 0.9rem;
+}
+
+monthcell label.day-label {
+  font-size: 1rem;
+}
+
+monthcell.out-of-month {
+  background-color: alpha(currentColor,0.05);
+}
+
+monthcell.out-of-month label {
+  color: alpha(currentColor,0.75);
+}
+
+monthcell button {
+  padding: 0 6px;
+  border-radius: 0;
+  border-bottom: none;
+  border-right: none;
+}
+
+monthpopover > box {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.notes-section box > textview {
+  border-radius: 6px;
+  padding: 6px;
+}
+
+.notes-section box > textview > text {
+  background: none;
+}
+
+agenda-view list > row {
+  padding: 2px 12px;
+}
+
+agenda-view list > label {
+  padding: 6px 12px;
+}
+
+agenda-view > scrolledwindow > viewport > list.background {
+  background-color: transparent;
+}
+
+label.no-events {
+  font-style: italic;
+}
+
+searchbutton > popover > arrow {
+  background: none;
+  border: none;
+}
+
+datechooser {
+  padding: 6px;
+}
+
+datechooser .current-week {
+  background: alpha(currentColor,0.07);
+  color: @sidebar_fg_color;
+  border-radius: 6px;
+}
+
+menubutton.sources-button {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-radius: 6px;
+  border-top-style: none;
+  border-bottom-style: none;
+}
+
+menubutton.sources-button:hover:not(:backdrop) {
+  background-image: none;
+  text-shadow: none;
+}
+
+menubutton.sources-button > button {
+  border-radius: 6px;
+  min-height: 0;
+  padding: 0 6px;
+}
+
+menubutton.sources-button > button .title {
+  font-size: 10pt;
+  font-weight: normal;
+  padding: 0 6px;
+}
+
+menubutton.sources-button > button .subtitle {
+  font-size: 8pt;
+  padding: 0 6px;
+}
+
+menubutton.sources-button > button .calendar-color-image {
+  -gtk-icon-size: 12px;
+}
+
+menubutton stack > box {
+  border-spacing: 6px;
+}
+
+.large-button {
+  padding: 6px;
+}
+
+.alarm-time {
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+.clocks-ampm-toggle-button,
+.clocks-secondary-standalone-label {
+  font-size: 18pt;
+}
+
+.clocks-standalone-label,
+.clocks-ringing-label {
+  font-size: 6em;
+  font-weight: 300;
+}
+
+.clocks-ringing-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.clocks-alarm-setup-time {
+  font-size: 32pt;
+}
+
+.clocks-timer-label,
+.clocks-spinbutton {
+  font-size: 48pt;
+}
+
+.timer-panel .timer-header {
+  font-size: 20pt;
+  font-weight: 300;
+}
+
+.timer-countdown {
+  font-size: 40pt;
+  font-weight: 300;
+}
+
+/* Stopwatch Panel */
+.lap-time {
+  font-weight: bold;
+}
+
+.stopped-stopwatch label,
+.running-stopwatch label,
+.paused-stopwatch label {
+  font-size: 70px;
+  font-weight: lighter;
+}
+
+.stopped-stopwatch .seconds-label {
+  font-weight: 300;
+}
+
+.running-stopwatch .seconds-label,
+.running-stopwatch .miliseconds-label {
+  color: #3c84f7;
+}
+
+.stopped-stopwatch .miliseconds-label,
+.running-stopwatch .miliseconds-label,
+.paused-stopwatch .miliseconds-label {
+  font-size: 50px;
+}
+
+.running-stopwatch .seconds-label,
+.paused-stopwatch .seconds-label {
+  font-weight: 300;
+}
+
+.clock-location {
+  font-weight: bolder;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.clock-time {
+  font-size: 2em;
+  padding: 0.2em 0.5em;
+  border-radius: 1em;
+}
+
+.none .clock-time {
+  background: alpha(currentColor,0.2);
+}
+
+.night .clock-time {
+  color: #3c84f7;
+  background-color: alpha(#5b9bf8,0.25);
+}
+
+.naut .clock-time,
+.astro .clock-time {
+  color: #FF7043;
+  background-color: alpha(#FF8A65,0.25);
+}
+
+.civil .clock-time,
+.day .clock-time {
+  color: #FBC02D;
+  background: alpha(#FFD600,0.25);
+}
+
+.exit-info {
+  padding: 6px;
+  border-top: 2px solid @accent_color;
+  background: alpha(@accent_color,0.9);
+  color: @accent_fg_color;
+}
+
+.error .exit-info {
+  border-top: 2px solid @error_color;
+  background: alpha(@error_color,0.9);
+  color: @error_fg_color;
+}
+
 preferencesgroup > box button.background-preview-button.toggle {
   padding: 0;
   background: none;
@@ -7314,70 +7821,11 @@ preferencesgroup > box .cutout-button {
   background-color: @dialog_bg_color;
 }
 
-preferencesgroup > box button.accent-button {
-  min-height: 24px;
-  min-width: 24px;
-  padding: 3px;
-  border-radius: 9999px;
-  background: var(--accent-bg-color);
-  outline: none;
-  background-clip: content-box;
-  box-shadow: none;
-}
-
-preferencesgroup > box button.accent-button:hover {
-  box-shadow: 0 0 0 3px alpha(currentColor,0.07);
-}
-
-preferencesgroup > box button.accent-button:checked {
-  box-shadow: 0 0 0 3px @accent_color;
-}
-
-preferencesgroup > box button.accent-button.blue, preferencesgroup > box button.accent-button.teal, preferencesgroup > box button.accent-button.green, preferencesgroup > box button.accent-button.yellow, preferencesgroup > box button.accent-button.orange, preferencesgroup > box button.accent-button.red, preferencesgroup > box button.accent-button.pink, preferencesgroup > box button.accent-button.purple, preferencesgroup > box button.accent-button.slate {
-  --accent-color: oklab(from var(--accent-bg-color) var(--standalone-color-oklab));
-}
-
-preferencesgroup > box button.accent-button.blue {
-  --accent-bg-color: var(--accent-blue);
-}
-
-preferencesgroup > box button.accent-button.teal {
-  --accent-bg-color: var(--accent-teal);
-}
-
-preferencesgroup > box button.accent-button.green {
-  --accent-bg-color: var(--accent-green);
-}
-
-preferencesgroup > box button.accent-button.yellow {
-  --accent-bg-color: var(--accent-yellow);
-}
-
-preferencesgroup > box button.accent-button.orange {
-  --accent-bg-color: var(--accent-orange);
-}
-
-preferencesgroup > box button.accent-button.red {
-  --accent-bg-color: var(--accent-red);
-}
-
-preferencesgroup > box button.accent-button.pink {
-  --accent-bg-color: var(--accent-pink);
-}
-
-preferencesgroup > box button.accent-button.purple {
-  --accent-bg-color: var(--accent-purple);
-}
-
-preferencesgroup > box button.accent-button.slate {
-  --accent-bg-color: var(--accent-slate);
-}
-
 window.org-gnome-TextEditor popover.open-popover > contents {
   padding: 0;
 }
 
-.nautilus-window .floating-bar {
+.floating-bar {
   min-height: 32px;
   padding: 0;
   margin: 6px;
@@ -7388,9 +7836,51 @@ window.org-gnome-TextEditor popover.open-popover > contents {
   box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.05), 0 2px 3px -1px rgba(0, 0, 0, 0.06), 0 1px 4px 0 rgba(0, 0, 0, 0.05);
 }
 
-.nautilus-window .floating-bar button {
+.floating-bar button {
   margin: 4px;
   color: @accent_fg_color;
+}
+
+.nautilus-list-view columnview.view, .nautilus-list-view treeview.view, .nautilus-list-view window.print columnview.dialog-action-box, window.print .nautilus-list-view columnview.dialog-action-box, .nautilus-list-view window.print treeview.dialog-action-box, window.print .nautilus-list-view treeview.dialog-action-box {
+  padding: 0;
+}
+
+.nautilus-list-view columnview.view > header > button, .nautilus-list-view treeview.view > header > button, .nautilus-list-view window.print columnview.dialog-action-box > header > button, window.print .nautilus-list-view columnview.dialog-action-box > header > button, .nautilus-list-view window.print treeview.dialog-action-box > header > button, window.print .nautilus-list-view treeview.dialog-action-box > header > button {
+  border-top: 1px solid alpha(currentColor,0.12);
+}
+
+.nautilus-list-view columnview.view > header > button:last-child, .nautilus-list-view treeview.view > header > button:last-child, .nautilus-list-view window.print columnview.dialog-action-box > header > button:last-child, window.print .nautilus-list-view columnview.dialog-action-box > header > button:last-child, .nautilus-list-view window.print treeview.dialog-action-box > header > button:last-child, window.print .nautilus-list-view treeview.dialog-action-box > header > button:last-child {
+  padding-right: 24px;
+}
+
+.nautilus-list-view listview.view, .nautilus-list-view window.print listview.dialog-action-box, window.print .nautilus-list-view listview.dialog-action-box {
+  padding: 6px;
+  margin: 0;
+  border-spacing: 3px;
+}
+
+.nautilus-list-view listview.view > row, .nautilus-list-view window.print listview.dialog-action-box > row, window.print .nautilus-list-view listview.dialog-action-box > row {
+  margin: 0;
+}
+
+.nautilus-list-view listview.view > row > cell, .nautilus-list-view window.print listview.dialog-action-box > row > cell, window.print .nautilus-list-view listview.dialog-action-box > row > cell {
+  padding: 4px;
+}
+
+.nautilus-list-view listview.view > row > cell:last-child, .nautilus-list-view window.print listview.dialog-action-box > row > cell:last-child, window.print .nautilus-list-view listview.dialog-action-box > row > cell:last-child {
+  padding-right: 24px;
+}
+
+.nautilus-list-view listview.view #NautilusViewCell, .nautilus-list-view window.print listview.dialog-action-box #NautilusViewCell, window.print .nautilus-list-view listview.dialog-action-box #NautilusViewCell {
+  padding: 0;
+}
+
+.nautilus-list-view listview.view #NautilusViewCell button.star.circular, .nautilus-list-view window.print listview.dialog-action-box #NautilusViewCell button.star.circular, window.print .nautilus-list-view listview.dialog-action-box #NautilusViewCell button.star.circular {
+  margin: 0;
+  min-height: 24px;
+  min-width: 24px;
+  padding: 3px;
+  border-radius: 9999px;
 }
 
 #NautilusQueryEditor > menubutton {
@@ -7422,6 +7912,590 @@ list.operations-list > row, list.operations-list > row:hover, list.operations-li
   background: none;
   transition: none;
   animation: none;
+}
+
+button.image-button.star {
+  min-height: 24px;
+  min-width: 24px;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.details-page {
+  margin: 24px 0px;
+}
+
+.installed-overlay-box {
+  font-size: smaller;
+  background-color: @accent_color;
+  border-radius: 0;
+  color: @accent_fg_color;
+  text-shadow: 0 1px 0 alpha(black,0.2);
+}
+
+screenshot-carousel box.frame {
+  border-width: 1px 0;
+  border-radius: 0;
+}
+
+screenshot-carousel button,
+.featured-carousel button {
+  margin: 12px;
+}
+
+.screenshot-image-main .image1,
+.screenshot-image-main .image2 {
+  margin-top: 6px;
+  margin-bottom: 12px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.app-tile-label {
+  font-size: 105%;
+}
+
+.review-textbox {
+  padding: 6px;
+}
+
+.origin-rounded-box {
+  background-color: alpha(currentColor,0.07);
+  border-radius: 9999px;
+  padding: 4px;
+}
+
+.origin-beta {
+  color: #FBC02D;
+}
+
+.origin-button > button {
+  padding: 3px 9px;
+}
+
+.card flowboxchild.card {
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  background: none;
+}
+
+.category-tile.card {
+  padding: 21px;
+  border: none;
+  border-radius: 6px;
+  min-width: 140px;
+  font-weight: 900;
+  font-size: larger;
+  box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.05), 0 2px 3px -1px rgba(0, 0, 0, 0.06), 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.category-tile.card.category-tile-iconless {
+  padding: 9px 15px;
+  min-width: 130px;
+  font-size: 105%;
+  font-weight: normal;
+  box-shadow: none;
+  background-color: alpha(currentColor,0.05);
+}
+
+.category-tile.card.category-create {
+  background: linear-gradient(180deg, #ce8cd7 0%, #2861c6 100%);
+  color: white;
+}
+
+.category-tile.card.category-create:hover {
+  background: linear-gradient(180deg, shade(#ce8cd7, 1.07) 0%, shade(#2861c6, 1.1) 100%);
+  color: white;
+}
+
+.category-tile.card.category-create:active {
+  background: linear-gradient(180deg, shade(#ce8cd7, 0.95) 0%, shade(#2861c6, 0.95) 100%);
+  color: white;
+}
+
+.category-tile.card.category-develop {
+  background: #5e5c64;
+  color: white;
+}
+
+.category-tile.card.category-develop:hover {
+  background: shade(#5e5c64, 1.2);
+  color: white;
+}
+
+.category-tile.card.category-develop:active {
+  background-color: shade(#5e5c64, 0.95);
+  color: white;
+}
+
+.category-tile.card.category-learn {
+  background: linear-gradient(180deg, #2ec27e 30%, #27a66c 100%);
+  color: white;
+}
+
+.category-tile.card.category-learn:hover {
+  background: linear-gradient(180deg, shade(#2ec27e, 1.06) 30%, shade(#27a66c, 1.06) 100%);
+  color: white;
+}
+
+.category-tile.card.category-learn:active {
+  background: linear-gradient(180deg, shade(#2ec27e, 0.95) 30%, shade(#27a66c, 0.95) 100%);
+  color: white;
+}
+
+.category-tile.card.category-play {
+  background: linear-gradient(75deg, #f9e2a7 0%, #eb5ec3 50%, #6d53e0 100%);
+  color: #393484;
+}
+
+.category-tile.card.category-play:hover {
+  background: linear-gradient(75deg, shade(#f9e2a7, 1.07) 0%, shade(#eb5ec3, 1.07) 50%, shade(#6d53e0, 1.07) 100%);
+  color: #393484;
+}
+
+.category-tile.card.category-play:active {
+  background: linear-gradient(75deg, shade(#f9e2a7, 0.97) 0%, shade(#eb5ec3, 0.95) 50%, shade(#6d53e0, 1.07) 100%);
+  color: #393484;
+}
+
+.category-tile.card.category-socialize {
+  background: linear-gradient(90deg, #ef4e9b 0%, #f77466 100%);
+  color: alpha(currentColor,0.75);
+}
+
+.category-tile.card.category-socialize:hover {
+  background: linear-gradient(90deg, shade(#ef4e9b, 1.08) 0%, shade(#f77466, 1.08) 100%);
+}
+
+.category-tile.card.category-socialize:active {
+  background: linear-gradient(90deg, shade(#ef4e9b, 0.95) 0%, shade(#f77466, 0.95) 100%);
+}
+
+.category-tile.card.category-work {
+  padding: 1px;
+  /* FIXME: work around https://gitlab.gnome.org/GNOME/gtk/-/issues/4324 */
+  color: #1c71d8;
+  background-color: #fdf8d7;
+  background-image: linear-gradient(alpha(currentColor,0.12) 1px, transparent 1px), linear-gradient(90deg, alpha(currentColor,0.12) 1px, transparent 1px);
+  background-size: 10px 10px, 10px 10px;
+  background-position: -1px -4px, center -1px;
+}
+
+.category-tile.card.category-work:hover {
+  color: #1c71d8;
+  background-color: #fefcef;
+  background-image: linear-gradient(alpha(currentColor,0.12) 1px, transparent 1px), linear-gradient(90deg, alpha(currentColor,0.12) 1px, transparent 1px);
+}
+
+.category-tile.card.category-work:active {
+  color: #1c71d8;
+  background-color: #fcf4bf;
+  background-image: linear-gradient(alpha(currentColor,0.12) 1px, transparent 1px), linear-gradient(90deg, alpha(currentColor,0.12) 1px, transparent 1px);
+}
+
+clamp.medium .category-tile:not(.category-tile-iconless),
+clamp.large .category-tile:not(.category-tile-iconless) {
+  font-size: larger;
+}
+
+.featured-tile {
+  padding: 0;
+  box-shadow: none;
+  color: currentColor;
+}
+
+.featured-tile label.title-1 {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.featured-tile.narrow label.title-1 {
+  font-size: 16pt;
+}
+
+.application-details-infobar, .application-details-infobar.info {
+  background-color: alpha(currentColor,0.05);
+  color: currentColor;
+  border: 1px solid alpha(currentColor,0.12);
+}
+
+.application-details-infobar.warning {
+  background-color: @warning_color;
+  color: @warning_fg_color;
+  border: 1px solid alpha(@warning_fg_color,0.1);
+}
+
+@keyframes install-progress-unknown-move {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+
+.application-details-description .button {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.install-progress {
+  background-image: linear-gradient(to top, @accent_color 2px, alpha(@accent_color,0) 2px);
+  background-repeat: no-repeat;
+  background-position: 0 bottom;
+  background-size: 0;
+  transition: none;
+}
+
+.install-progress:dir(rtl) {
+  background-position: 100% bottom;
+}
+
+.review-row > * {
+  margin: 12px;
+}
+
+.review-row button {
+  font-size: smaller;
+}
+
+.review-row .vote-buttons button {
+  margin-right: -1px;
+}
+
+.review-row .vote-buttons button:not(:first-child) {
+  border-image: linear-gradient(to top, alpha(currentColor,0.12), alpha(currentColor,0.12)) 0 0 0 1/5px 0 5px 1px;
+}
+
+.review-row .vote-buttons button:hover,
+.review-row .vote-buttons button:active,
+.review-row .vote-buttons button:hover + button,
+.review-row .vote-buttons button:active + button {
+  border-image: none;
+}
+
+review-bar {
+  color: alpha(currentColor,0.45);
+  background-image: none;
+  background-color: alpha(currentColor,0.35);
+}
+
+.review-histogram star-image {
+  color: alpha(currentColor,0.45);
+}
+
+.version-arrow-label {
+  font-size: x-small;
+}
+
+.overview-more-button {
+  font-size: smaller;
+  padding: 0 16px;
+}
+
+.app-row-origin-text {
+  font-size: smaller;
+}
+
+.app-listbox-header {
+  padding: 6px;
+  border-bottom: 1px solid alpha(currentColor,0.12);
+}
+
+.image-list {
+  background-color: transparent;
+}
+
+box.star {
+  background-color: transparent;
+  background-image: none;
+}
+
+button.star {
+  outline-offset: 0;
+  background-color: transparent;
+  background-image: none;
+  border-image: none;
+  border-radius: 0;
+  border-width: 0;
+  padding: 0;
+  box-shadow: none;
+  outline-offset: -1px;
+}
+
+star-image {
+  color: #FBC02D;
+}
+
+.dimmer-label {
+  opacity: 0.25;
+}
+
+.update-failed-details {
+  font-family: Monospace;
+  font-size: smaller;
+  padding: 16px;
+}
+
+.upgrade-banner {
+  padding: 0px;
+  border-radius: 6px;
+  border: none;
+}
+
+.upgrade-banner-background {
+  background: linear-gradient(to bottom, #66BB6A, #5b9bf8);
+  color: white;
+}
+
+.upgrade-buttons #button_upgrades_install {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+scrolledwindow.list-page > viewport > clamp > box {
+  margin: 24px 12px;
+  border-spacing: 24px;
+}
+
+.update-preferences preferencesgroup > box > box {
+  margin-top: 18px;
+}
+
+.section > label:not(:first-child) {
+  margin-top: 6px;
+}
+
+.section > box:not(:first-child) {
+  margin-top: 12px;
+}
+
+clamp.status-page {
+  margin: 36px 12px;
+}
+
+clamp.status-page .iconbox {
+  min-height: 128px;
+  min-width: 128px;
+}
+
+clamp.status-page .icon {
+  color: alpha(currentColor,0.45);
+  min-height: 32px;
+  min-width: 32px;
+}
+
+clamp.status-page .icon:not(:last-child) {
+  margin-bottom: 36px;
+}
+
+clamp.status-page .title:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+app-context-bar .context-tile {
+  border: 1px solid alpha(currentColor,0.12);
+  background-color: transparent;
+  border-radius: 0;
+  padding: 24px 12px 21px 12px;
+  outline-offset: 5px;
+  transition-property: outline, outline-offset, background-image;
+  border-bottom: none;
+  border-right: none;
+}
+
+app-context-bar .context-tile:hover {
+  background-image: none;
+  background-color: alpha(currentColor,0.07);
+}
+
+app-context-bar .context-tile.keyboard-activating, app-context-bar .context-tile:active {
+  background-color: alpha(currentColor,0.16);
+}
+
+app-context-bar .context-tile:focus:focus-visible {
+  outline-offset: -1px;
+}
+
+app-context-bar.horizontal box:first-child .context-tile:first-child, app-context-bar.vertical .context-tile:first-child {
+  border-left: none;
+}
+
+app-context-bar.horizontal .context-tile, app-context-bar.vertical box:first-child .context-tile {
+  border-top: none;
+}
+
+app-context-bar > box:not(:first-child) > button.flat {
+  border-radius: 0;
+}
+
+app-context-bar > box:not(:first-child) > button.flat:last-child {
+  border-radius: 0 6px 6px 0;
+}
+
+app-context-bar > box:first-child > button.flat {
+  border-radius: 0;
+}
+
+app-context-bar > box:first-child > button.flat:first-child {
+  border-radius: 6px 0 0 6px;
+}
+
+app-context-bar > box > button.flat {
+  border-left-color: alpha(currentColor,0.12);
+}
+
+carousel.card {
+  border: none;
+  background-color: alpha(currentColor,0.05);
+}
+
+.context-tile-lozenge {
+  min-height: 28px;
+  min-width: 28px;
+  padding: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 9999px;
+}
+
+.context-tile-lozenge.large {
+  font-size: 24px;
+  padding: 16px;
+  min-width: 24px;
+  /* 60px minus the left and right padding */
+  min-height: 24px;
+  /* 60px minus the top and bottom padding */
+}
+
+.context-tile-lozenge.wide-image image {
+  margin-top: -28px;
+  margin-bottom: -28px;
+}
+
+.context-tile-lozenge image {
+  -gtk-icon-style: symbolic;
+}
+
+.context-tile-lozenge.grey {
+  color: currentColor;
+  background-color: alpha(currentColor,0.07);
+}
+
+.context-tile-lozenge.green, .context-tile-lozenge.details-rating-0 {
+  color: mix(black,@success_color,0.85);
+  background-color: alpha(@success_color,0.15);
+}
+
+.context-tile-lozenge.blue, .context-tile-lozenge.details-rating-5 {
+  color: #5b9bf8;
+  background-color: alpha(#5b9bf8,0.15);
+}
+
+.context-tile-lozenge.yellow, .context-tile-lozenge.details-rating-12 {
+  color: mix(black,@warning_color,0.85);
+  background-color: alpha(@warning_color,0.15);
+}
+
+.context-tile-lozenge.details-rating-15 {
+  color: #FF8A65;
+  background-color: alpha(#FF8A65,0.15);
+}
+
+.context-tile-lozenge.red, .context-tile-lozenge.details-rating-18 {
+  color: mix(black,@error_color,0.85);
+  background-color: alpha(@error_color,0.15);
+}
+
+.eol-red {
+  font-weight: bold;
+  color: @error_color;
+}
+
+window.narrow .app-title {
+  font-size: 16pt;
+}
+
+window.narrow .app-developer {
+  font-size: small;
+}
+
+.install-progress-label {
+  font-size: smaller;
+  font-feature-settings: "tnum";
+}
+
+scrolledwindow.fake-adw-status-page > viewport > box {
+  margin: 36px 12px;
+}
+
+scrolledwindow.fake-adw-status-page > viewport > box > clamp:not(:last-child) > box {
+  margin-bottom: 36px;
+}
+
+scrolledwindow.fake-adw-status-page > viewport > box > clamp > box > .icon:not(:last-child) {
+  margin-bottom: 36px;
+}
+
+scrolledwindow.fake-adw-status-page > viewport > box > clamp > box > .title:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+statuspage.icon-dropshadow image.icon {
+  -gtk-icon-shadow: 0 1px 12px rgba(0, 0, 0, 0.05), 0 -1px rgba(0, 0, 0, 0.05), 1px 0 rgba(0, 0, 0, 0.1), 0 1px rgba(0, 0, 0, 0.3), -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+window.info scrollbar.vertical {
+  margin-top: 48px;
+  background: none;
+  box-shadow: none;
+}
+
+window.info scrollbar.vertical trough {
+  margin-top: 0;
+}
+
+row.app > box.header {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+row.app > box.header {
+  border-spacing: 12px;
+}
+
+row.app > box.header > image {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+row.app label.warning {
+  color: #E53935;
+}
+
+@keyframes pre-delay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    filter: opacity(0%);
+  }
+}
+
+/* Give a fade-in animation to spinners. */
+spinner.fade-in:checked {
+  animation: pre-delay 0.5s linear 1, fade-in 1s linear 1, spin 1s linear infinite;
+  animation-delay: 0s, 0.5s, 0.5s;
 }
 
 #places-label {
@@ -7650,6 +8724,182 @@ popover.menu themeswitcher checkbutton.light {
 popover.menu themeswitcher checkbutton.dark {
   color: white;
   background-color: #1e1e1e;
+}
+
+styleselector checkbutton {
+  padding: 0;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0;
+  background-clip: content-box;
+  border-radius: 9999px;
+  box-shadow: none;
+  border: none;
+}
+
+styleselector checkbutton:hover {
+  box-shadow: inset 0 0 0 2px alpha(currentColor,0.12);
+}
+
+styleselector checkbutton:checked {
+  box-shadow: inset 0 0 0 2px var(--accent-bg-color);
+}
+
+styleselector checkbutton:checked > radio, styleselector checkbutton:checked > radio:hover, styleselector checkbutton:checked > radio:checked, styleselector checkbutton:checked > radio:checked:hover {
+  -gtk-icon-size: 20px;
+  -gtk-icon-source: -gtk-scaled(-gtk-recolor(url("assets/checkbox-checked-symbolic.svg")), -gtk-recolor(url("assets/checkbox-checked-symbolic@2.svg")));
+  color: var(--accent-fg-color);
+  background-color: var(--accent-bg-color);
+  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.08), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+styleselector checkbutton > radio {
+  min-height: 20px;
+  min-width: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+styleselector checkbutton > radio:not(:checked):not(:indeterminate), styleselector checkbutton > radio:not(:checked):not(:indeterminate):hover {
+  color: transparent;
+  border: none;
+  background: none;
+  box-shadow: none;
+  -gtk-icon-source: none;
+}
+
+.note-window, .note-window .text-view.view, .note-window window.print .text-view.dialog-action-box, window.print .note-window .text-view.dialog-action-box, .note-window .text-view.view > text, .note-window window.print .text-view.dialog-action-box > text, window.print .note-window .text-view.dialog-action-box > text, .note-window .toolbar, .note-window .toolbar button {
+  color: @accent_fg_color;
+}
+
+.note-window .top-bar > windowhandle:backdrop {
+  filter: none;
+}
+
+.note-window popover > arrow,
+.note-window popover > contents {
+  border: 1px solid alpha(@accent_fg_color,0.1);
+  box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.09), 0 2px 14px 3px rgba(0, 0, 0, 0.05);
+}
+
+.note-window.style-yellow, .note-window.style-yellow .text-view.view, .note-window.style-yellow window.print .text-view.dialog-action-box, window.print .note-window.style-yellow .text-view.dialog-action-box, .note-window.style-yellow .text-view.view > text, .note-window.style-yellow window.print .text-view.dialog-action-box > text, window.print .note-window.style-yellow .text-view.dialog-action-box > text {
+  background-color: var(--accent-yellow);
+}
+
+.note-window.style-yellow headerbar.flat, .note-window.style-yellow window.print headerbar.titlebar, window.print .note-window.style-yellow headerbar.titlebar, .note-window.style-yellow window.pagesetup headerbar.titlebar, window.pagesetup .note-window.style-yellow headerbar.titlebar, .note-window.style-yellow window.aboutdialog headerbar.titlebar, window.aboutdialog .note-window.style-yellow headerbar.titlebar, .note-window.style-yellow window.colorchooser headerbar.titlebar, window.colorchooser .note-window.style-yellow headerbar.titlebar, .note-window.style-yellow window.appchooser headerbar.titlebar, window.appchooser .note-window.style-yellow headerbar.titlebar, .note-window.style-yellow window.shortcuts headerbar.titlebar, window.shortcuts .note-window.style-yellow headerbar.titlebar, .note-window.style-yellow headerbar.flat:backdrop, .note-window.style-yellow .toolbar, .note-window.style-yellow .toolbar:backdrop {
+  background-color: var(--accent-yellow);
+}
+
+.note-window.style-yellow .text-view.view > text > selection, .note-window.style-yellow window.print .text-view.dialog-action-box > text > selection, window.print .note-window.style-yellow .text-view.dialog-action-box > text > selection {
+  background-color: alpha(@accent_fg_color,0.35);
+}
+
+.note-window.style-yellow popover > arrow,
+.note-window.style-yellow popover > contents {
+  background-color: mix(@accent_fg_color,var(--accent-yellow),0.9);
+}
+
+.note-window.style-pink, .note-window.style-pink .text-view.view, .note-window.style-pink window.print .text-view.dialog-action-box, window.print .note-window.style-pink .text-view.dialog-action-box, .note-window.style-pink .text-view.view > text, .note-window.style-pink window.print .text-view.dialog-action-box > text, window.print .note-window.style-pink .text-view.dialog-action-box > text {
+  background-color: var(--accent-pink);
+}
+
+.note-window.style-pink headerbar.flat, .note-window.style-pink window.print headerbar.titlebar, window.print .note-window.style-pink headerbar.titlebar, .note-window.style-pink window.pagesetup headerbar.titlebar, window.pagesetup .note-window.style-pink headerbar.titlebar, .note-window.style-pink window.aboutdialog headerbar.titlebar, window.aboutdialog .note-window.style-pink headerbar.titlebar, .note-window.style-pink window.colorchooser headerbar.titlebar, window.colorchooser .note-window.style-pink headerbar.titlebar, .note-window.style-pink window.appchooser headerbar.titlebar, window.appchooser .note-window.style-pink headerbar.titlebar, .note-window.style-pink window.shortcuts headerbar.titlebar, window.shortcuts .note-window.style-pink headerbar.titlebar, .note-window.style-pink headerbar.flat:backdrop, .note-window.style-pink .toolbar, .note-window.style-pink .toolbar:backdrop {
+  background-color: var(--accent-pink);
+}
+
+.note-window.style-pink .text-view.view > text > selection, .note-window.style-pink window.print .text-view.dialog-action-box > text > selection, window.print .note-window.style-pink .text-view.dialog-action-box > text > selection {
+  background-color: alpha(@accent_fg_color,0.35);
+}
+
+.note-window.style-pink popover > arrow,
+.note-window.style-pink popover > contents {
+  background-color: mix(@accent_fg_color,var(--accent-pink),0.9);
+}
+
+.note-window.style-green, .note-window.style-green .text-view.view, .note-window.style-green window.print .text-view.dialog-action-box, window.print .note-window.style-green .text-view.dialog-action-box, .note-window.style-green .text-view.view > text, .note-window.style-green window.print .text-view.dialog-action-box > text, window.print .note-window.style-green .text-view.dialog-action-box > text {
+  background-color: var(--accent-green);
+}
+
+.note-window.style-green headerbar.flat, .note-window.style-green window.print headerbar.titlebar, window.print .note-window.style-green headerbar.titlebar, .note-window.style-green window.pagesetup headerbar.titlebar, window.pagesetup .note-window.style-green headerbar.titlebar, .note-window.style-green window.aboutdialog headerbar.titlebar, window.aboutdialog .note-window.style-green headerbar.titlebar, .note-window.style-green window.colorchooser headerbar.titlebar, window.colorchooser .note-window.style-green headerbar.titlebar, .note-window.style-green window.appchooser headerbar.titlebar, window.appchooser .note-window.style-green headerbar.titlebar, .note-window.style-green window.shortcuts headerbar.titlebar, window.shortcuts .note-window.style-green headerbar.titlebar, .note-window.style-green headerbar.flat:backdrop, .note-window.style-green .toolbar, .note-window.style-green .toolbar:backdrop {
+  background-color: var(--accent-green);
+}
+
+.note-window.style-green .text-view.view > text > selection, .note-window.style-green window.print .text-view.dialog-action-box > text > selection, window.print .note-window.style-green .text-view.dialog-action-box > text > selection {
+  background-color: alpha(@accent_fg_color,0.35);
+}
+
+.note-window.style-green popover > arrow,
+.note-window.style-green popover > contents {
+  background-color: mix(@accent_fg_color,var(--accent-green),0.9);
+}
+
+.note-window.style-purple, .note-window.style-purple .text-view.view, .note-window.style-purple window.print .text-view.dialog-action-box, window.print .note-window.style-purple .text-view.dialog-action-box, .note-window.style-purple .text-view.view > text, .note-window.style-purple window.print .text-view.dialog-action-box > text, window.print .note-window.style-purple .text-view.dialog-action-box > text {
+  background-color: var(--accent-purple);
+}
+
+.note-window.style-purple headerbar.flat, .note-window.style-purple window.print headerbar.titlebar, window.print .note-window.style-purple headerbar.titlebar, .note-window.style-purple window.pagesetup headerbar.titlebar, window.pagesetup .note-window.style-purple headerbar.titlebar, .note-window.style-purple window.aboutdialog headerbar.titlebar, window.aboutdialog .note-window.style-purple headerbar.titlebar, .note-window.style-purple window.colorchooser headerbar.titlebar, window.colorchooser .note-window.style-purple headerbar.titlebar, .note-window.style-purple window.appchooser headerbar.titlebar, window.appchooser .note-window.style-purple headerbar.titlebar, .note-window.style-purple window.shortcuts headerbar.titlebar, window.shortcuts .note-window.style-purple headerbar.titlebar, .note-window.style-purple headerbar.flat:backdrop, .note-window.style-purple .toolbar, .note-window.style-purple .toolbar:backdrop {
+  background-color: var(--accent-purple);
+}
+
+.note-window.style-purple .text-view.view > text > selection, .note-window.style-purple window.print .text-view.dialog-action-box > text > selection, window.print .note-window.style-purple .text-view.dialog-action-box > text > selection {
+  background-color: alpha(@accent_fg_color,0.35);
+}
+
+.note-window.style-purple popover > arrow,
+.note-window.style-purple popover > contents {
+  background-color: mix(@accent_fg_color,var(--accent-purple),0.9);
+}
+
+.note-window.style-blue, .note-window.style-blue .text-view.view, .note-window.style-blue window.print .text-view.dialog-action-box, window.print .note-window.style-blue .text-view.dialog-action-box, .note-window.style-blue .text-view.view > text, .note-window.style-blue window.print .text-view.dialog-action-box > text, window.print .note-window.style-blue .text-view.dialog-action-box > text {
+  background-color: var(--accent-blue);
+}
+
+.note-window.style-blue headerbar.flat, .note-window.style-blue window.print headerbar.titlebar, window.print .note-window.style-blue headerbar.titlebar, .note-window.style-blue window.pagesetup headerbar.titlebar, window.pagesetup .note-window.style-blue headerbar.titlebar, .note-window.style-blue window.aboutdialog headerbar.titlebar, window.aboutdialog .note-window.style-blue headerbar.titlebar, .note-window.style-blue window.colorchooser headerbar.titlebar, window.colorchooser .note-window.style-blue headerbar.titlebar, .note-window.style-blue window.appchooser headerbar.titlebar, window.appchooser .note-window.style-blue headerbar.titlebar, .note-window.style-blue window.shortcuts headerbar.titlebar, window.shortcuts .note-window.style-blue headerbar.titlebar, .note-window.style-blue headerbar.flat:backdrop, .note-window.style-blue .toolbar, .note-window.style-blue .toolbar:backdrop {
+  background-color: var(--accent-blue);
+}
+
+.note-window.style-blue .text-view.view > text > selection, .note-window.style-blue window.print .text-view.dialog-action-box > text > selection, window.print .note-window.style-blue .text-view.dialog-action-box > text > selection {
+  background-color: alpha(@accent_fg_color,0.35);
+}
+
+.note-window.style-blue popover > arrow,
+.note-window.style-blue popover > contents {
+  background-color: mix(@accent_fg_color,var(--accent-blue),0.9);
+}
+
+.note-window.style-gray, .note-window.style-gray .text-view.view, .note-window.style-gray window.print .text-view.dialog-action-box, window.print .note-window.style-gray .text-view.dialog-action-box, .note-window.style-gray .text-view.view > text, .note-window.style-gray window.print .text-view.dialog-action-box > text, window.print .note-window.style-gray .text-view.dialog-action-box > text {
+  background-color: #565656;
+}
+
+.note-window.style-gray headerbar.flat, .note-window.style-gray window.print headerbar.titlebar, window.print .note-window.style-gray headerbar.titlebar, .note-window.style-gray window.pagesetup headerbar.titlebar, window.pagesetup .note-window.style-gray headerbar.titlebar, .note-window.style-gray window.aboutdialog headerbar.titlebar, window.aboutdialog .note-window.style-gray headerbar.titlebar, .note-window.style-gray window.colorchooser headerbar.titlebar, window.colorchooser .note-window.style-gray headerbar.titlebar, .note-window.style-gray window.appchooser headerbar.titlebar, window.appchooser .note-window.style-gray headerbar.titlebar, .note-window.style-gray window.shortcuts headerbar.titlebar, window.shortcuts .note-window.style-gray headerbar.titlebar, .note-window.style-gray headerbar.flat:backdrop, .note-window.style-gray .toolbar, .note-window.style-gray .toolbar:backdrop {
+  background-color: #565656;
+}
+
+.note-window.style-gray .text-view.view > text > selection, .note-window.style-gray window.print .text-view.dialog-action-box > text > selection, window.print .note-window.style-gray .text-view.dialog-action-box > text > selection {
+  background-color: alpha(@accent_fg_color,0.35);
+}
+
+.note-window.style-gray popover > arrow,
+.note-window.style-gray popover > contents {
+  background-color: mix(@accent_fg_color,#565656,0.9);
+}
+
+.note-window.style-charcoal, .note-window.style-charcoal .text-view.view, .note-window.style-charcoal window.print .text-view.dialog-action-box, window.print .note-window.style-charcoal .text-view.dialog-action-box, .note-window.style-charcoal .text-view.view > text, .note-window.style-charcoal window.print .text-view.dialog-action-box > text, window.print .note-window.style-charcoal .text-view.dialog-action-box > text {
+  background-color: #2b2b2b;
+}
+
+.note-window.style-charcoal headerbar.flat, .note-window.style-charcoal window.print headerbar.titlebar, window.print .note-window.style-charcoal headerbar.titlebar, .note-window.style-charcoal window.pagesetup headerbar.titlebar, window.pagesetup .note-window.style-charcoal headerbar.titlebar, .note-window.style-charcoal window.aboutdialog headerbar.titlebar, window.aboutdialog .note-window.style-charcoal headerbar.titlebar, .note-window.style-charcoal window.colorchooser headerbar.titlebar, window.colorchooser .note-window.style-charcoal headerbar.titlebar, .note-window.style-charcoal window.appchooser headerbar.titlebar, window.appchooser .note-window.style-charcoal headerbar.titlebar, .note-window.style-charcoal window.shortcuts headerbar.titlebar, window.shortcuts .note-window.style-charcoal headerbar.titlebar, .note-window.style-charcoal headerbar.flat:backdrop, .note-window.style-charcoal .toolbar, .note-window.style-charcoal .toolbar:backdrop {
+  background-color: #2b2b2b;
+}
+
+.note-window.style-charcoal .text-view.view > text > selection, .note-window.style-charcoal window.print .text-view.dialog-action-box > text > selection, window.print .note-window.style-charcoal .text-view.dialog-action-box > text > selection {
+  background-color: alpha(@accent_fg_color,0.35);
+}
+
+.note-window.style-charcoal popover > arrow,
+.note-window.style-charcoal popover > contents {
+  background-color: mix(@accent_fg_color,#2b2b2b,0.9);
 }
 
 window#desktopwindow.background {

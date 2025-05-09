@@ -1,8 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" version="1.1">
- <defs>
-  <style id="current-color-scheme" type="text/css">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="16"
+   height="16"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="xfce-wm-maximize.svg"
+   inkscape:version="1.4.1 (93de688d07, 2025-03-30)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="90.509668"
+     inkscape:cx="7.3417571"
+     inkscape:cy="8.253262"
+     inkscape:window-width="2658"
+     inkscape:window-height="1412"
+     inkscape:window-x="782"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1">
+    <style
+       id="current-color-scheme"
+       type="text/css">
    .ColorScheme-Text { color:#dfdfdf; } .ColorScheme-Highlight { color:#4285f4; } .ColorScheme-NeutralText { color:#ff9800; } .ColorScheme-PositiveText { color:#4caf50; } .ColorScheme-NegativeText { color:#f44336; }
   </style>
- </defs>
- <path style="fill:currentColor" class="ColorScheme-Text" d="M 5,4 C 4.446,4 4,4.446 4,5 V 11 C 4,11.554 4.446,12 5,12 H 11 C 11.554,12 12,11.554 12,11 V 5 C 12,4.446 11.554,4 11,4 Z M 6.5,6 H 9.5 C 9.777,6 10,6.223 10,6.5 V 9.5 C 10,9.777 9.777,10 9.5,10 H 6.5 C 6.223,10 6,9.777 6,9.5 V 6.5 C 6,6.223 6.223,6 6.5,6 Z"/>
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect3"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,1,1,0,0.60234375,0,1 @ F,0,0,1,0,0.61122056,0,1 @ F,0,0,1,0,0.61122056,0,1 @ F,0,0,1,0,0.61122056,0,1 @ F,0,0,1,0,0.60234375,0,1 @ F,0,0,1,0,1.5832671,0,1 | F,0,1,1,0,0.60234375,0,1 @ F,0,0,1,0,1.5832671,0,1 @ F,0,1,1,0,0.60234375,0,1 @ F,0,0,1,0,0.61122056,0,1 @ F,0,0,1,0,0.61122056,0,1 @ F,0,0,1,0,0.61122056,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+  </defs>
+  <rect
+     style="opacity:1;fill:none;stroke:#dfdfdf;stroke-width:1.00577;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+     id="rect1"
+     width="7.1659665"
+     height="7.1659665"
+     x="4.417017"
+     y="4.417017"
+     rx="1.1048543"
+     ry="1.1048543" />
 </svg>
