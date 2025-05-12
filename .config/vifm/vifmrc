@@ -90,9 +90,9 @@ endif
 set statusline="%t%[ -> %T%] %6E %12A %=%d %5u:%g"
 
 " colorscheme dracula
- colorscheme dwmlight
+" colorscheme dwmlight
 " colorscheme gruvbox
-" colorscheme paper
+ colorscheme paper
 " colorscheme papercolor-dark
 " colorscheme papercolor-light
 " colorscheme solarized-dark
