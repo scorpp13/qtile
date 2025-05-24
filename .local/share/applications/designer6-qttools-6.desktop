@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Qt 6 Designer
+Type=Application
+Exec=designer6
+TryExec=designer6
+Icon=designer6
+Categories=Qt;Development;GUIDesigner;
+Comment=WYSIWYG tool for designing and building graphical user interfaces with QtWidgets
+Hidden=true

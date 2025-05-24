@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Qt 6 QDBusViewer
+Type=Application
+Exec=qdbusviewer6
+TryExec=qdbusviewer6
+Icon=qdbusviewer6
+Categories=Qt;Development;
+Comment=Tool that lets introspect D-Bus objects and messages
+Hidden=true

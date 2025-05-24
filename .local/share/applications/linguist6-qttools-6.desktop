@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Qt 6 Linguist
+Type=Application
+Exec=linguist6
+TryExec=linguist6
+Icon=linguist6
+Categories=Qt;Development;Translation;
+Comment=Tool for translating Qt applications
+Hidden=true

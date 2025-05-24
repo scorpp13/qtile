@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Qt 6 Assistant
+Type=Application
+Exec=assistant6
+TryExec=assistant6
+Icon=assistant6
+Categories=Qt;Development;Documentation;
+Comment=Tool for viewing online documentation in Qt help file format
+Hidden=true
